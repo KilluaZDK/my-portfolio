@@ -5,16 +5,16 @@ export default function smoothScroll() {
 
       const hash = this.hash
 
+      console.log()
       $('input#nav_switch').prop('checked', false)
 
       $('html, body').animate(
         {
           scrollTop: $(hash).offset().top - 80,
         },
-        500,
+        800,
         function () {
-          // TODO: Add hash (#) to URL when done scrolling (default click behavior)
-          // window.location.hash = hash
+          window.history.replaceState(null, null, `${window.location.origin}/${hash}`)
         }
       )
     }
