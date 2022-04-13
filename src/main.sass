@@ -4,7 +4,7 @@ $color_background: #DFE0DB
 $color_hamburger_bg: #4F5052
 $color_pink: #F76BC5
 $color_blue: #3DB5C7
-$color_black: #4F5052
+$color_black: #333333
 $color_white: #FFFDF7
 
 $height_nav_lg: 104px
@@ -31,20 +31,20 @@ $height_nav_sm: 72px
   margin: 0
 
 // 三大區塊 margin
-@mixin large_margin
-  margin: 0 60px
+@mixin large_padding
+  padding: 0 60px
 
-@mixin middle_margin
-  margin: 0 40px
+@mixin middle_padding
+  padding: 0 40px
 
-@mixin small_margin
-  margin: 0 20px
+@mixin small_padding
+  padding: 0 20px
 
 
 // 粉紅色標題線
 @mixin line
   width: 30px
-  height: 2px
+  height: 3px
   background-color: $color_pink
   border: 1px
   border-radius: 3px
@@ -53,15 +53,15 @@ $height_nav_sm: 72px
 // 粉紅色標題線旁標題
 @mixin large_title
   margin: 0 0 0 16px
-  font-size: 20px
+  font-size: 28px
   letter-spacing: 6px
 
 // 年份區塊
 @mixin year
   color: #ffffff
-  font-size: 12px
+  font-size: 16px
   background-color: $color_pink
-  opacity: 0.4
+  opacity: 1
   padding: 2px 6px
   margin: 0
 
@@ -82,7 +82,7 @@ body
 
 //- nav
 nav.nav
-  box-shadow: 0px 5px 10px 0px #aaa
+  // box-shadow: 0px 5px 10px 0px #aaa
   position: fixed
   width: 100%
   height: $height_nav_sm
@@ -104,6 +104,9 @@ nav.nav
         z-index: 2
         width: 60%
         cursor: pointer
+        transition: 0.3s
+        &:hover
+          transform: rotate(10deg)
     input#nav_switch
       display: none
     .nav_hamburger-lines
@@ -119,6 +122,12 @@ nav.nav
           font-size: 28px
           letter-spacing: 8px
           cursor: pointer
+          transition: 0.3s
+          display: inline-block
+          &:hover
+            color: $color_blue
+            transform: translate(4px, 4px)
+            
       li ~ li
         margin: 0 0 0 40px
 
@@ -168,10 +177,10 @@ header.header
         margin: 0 0 16px 0
         .header_bottom_title
           color: $color_blue
-          font-size: 18px
+          font-size: 20px
           margin: 0 0 8px 0
         .header_bottom_text
-          font-size: 16px
+          font-size: 18px
           margin: 0 0 8px 0
           line-height: 26px
         .header_bottom_text.small_screen
@@ -186,7 +195,8 @@ header.header
 
 // about 和 works 共通設定
 .container
-  +large_margin
+  +large_padding
+  margin: 0 0 80px 0
   .container_title
     +large_top_title
 
@@ -213,7 +223,7 @@ header.header
       .about_top_detail
         display: flex
         align-items: center
-        .about_top_detail_cross
+        .about_top_detail_icon
           margin: 0 28px 0 0
           font-size: 28px
         .about_top_detail_content
@@ -233,11 +243,8 @@ header.header
           width: 100%
           display: flex
           align-items: center
-          .about_top_detail_cross.none
+          .about_top_detail_icon.none
             opacity: 0
-          .about_top_detail_cross
-            margin: 0 28px 0 0
-            font-size: 28px
           .about_top_detail_content
             width: 100%
             .about_top_detail_content_block
@@ -248,12 +255,13 @@ header.header
                 justify-content: space-between
                 p.chinese
                   margin: 0
+                  font-size: 20px
                 .year_wrapper
                   p.year
                     +year
               .about_top_detail_content_block_botton
                 p.english
-                  font-size: 10px
+                  font-size: 14px
                   margin: 12px 0 0 0
     //- 技能
     .about_top_content.skills
@@ -266,7 +274,7 @@ header.header
             display: flex
             flex-direction: column
             pre.about_top_detail_content_block_row
-              font-size: 14px
+              font-size: 20px
               margin: 0 0 8px 0
     //- 證書
     .about_top_content.certificate
@@ -276,7 +284,7 @@ header.header
             .about_top_detail_content_block
               .about_top_detail_content_block_botton
                 p.english
-                  font-size: 16px
+                  font-size: 20px
   //- 工作經歷
   .about_group
     margin: 80px 0 0 0
@@ -287,19 +295,30 @@ header.header
         display: flex
         align-items: center
         justify-content: space-between
-        width: 30%
-        margin: 32px 0 40px 0
+        // width: 80%
+        margin: 32px 0 24px 0
         .about_marketing_title_wrapper_block
           display: flex
           align-items: center
-          p.cross
-            font-size: 28px
+          img
             margin: 0 28px 0 0
+            width: 36px
           p.title
-            font-size: 20px
+            font-size: 24px
+            margin: 0
         .year_wrapper
           p.year
             +year
+      .about_marketing_title_wrapper.marketing
+        justify-content: flex-start
+        img.none
+          opacity: 0
+          width: 36px
+        .about_marketing_text
+          font-size: 20px
+          line-height: 32px
+          color: rgba($color_black, 0.7)
+          // margin: 0 0 52px 0
       //- 八張圖片_集合
       .about_marketing_container
         width: 100%
@@ -311,7 +330,7 @@ header.header
           opacity: 0
         //- 區塊
         .about_marketing_block
-          width: 30%
+          width: 23%
           background-color: #fff
           margin: 0 0 40px 0
           border-radius: 16px
@@ -322,20 +341,31 @@ header.header
               border-radius: 16px 16px 0 0
           .about_marketing_content
             padding: 32px 8%
+            display: flex
+            flex-direction: column
+            align-items: center
             .about_marketing_content_title_wrapper
               display: flex
+              flex-direction: column
               align-items: center
-              margin: 0 0 24px 0
               p.name
-                font-size: 24px
+                font-size: 20px
                 margin: 0
               pre.sort
-                font-size: 16px
-                margin: 0 0 0 12px
+                font-size: 14px
+                margin: 8px 0 0 0
+            hr
+              width: 12px
+              height: 2px
+              background-color: $color_black
+              margin: 20px 0
+              border: none
             .about_marketing_content_detail
-              font-size: 12px
+              font-size: 16px
               line-height: 24px
-              color: rgb($color_black, 0.6)
+        // 偽區塊
+        .about_marketing_block.fake_block
+          display: none
       //- 其他_標題
       .about_other
         margin: 20px 0 0 0
@@ -345,10 +375,11 @@ header.header
           .about_other_block_container
             display: flex
             align-items: center
-            .about_other_block_cross
-              font-size: 28px
+            .about_other_block_icon
               margin: 0 28px 0 0
-            .about_other_block_cross.none
+              img
+                width: 36px
+            .about_other_block_icon.none
               opacity: 0
             .about_other_block_detail_wrapper
               display: flex
@@ -356,16 +387,18 @@ header.header
               width: 100%
               .about_other_block_detail_title_wrapper
                 pre.about_other_block_detail_title
-                  font-size: 20px
+                  font-size: 24px
                   margin: 0
+                pre.about_other_block_detail_title ~ pre.about_other_block_detail_title
+                  margin: 4px 0 0 0
               .about_other_block_detail_year_wrapper
                 p.year
                   +year
                 p.year.width
                   padding: 2px 30px
             .about_other_block_detail_text
-              font-size: 16px
-              color: rgba($color_black, 0.6)
+              font-size: 20px
+              color: rgba($color_black, 0.7)
               margin: 24px 0 0 0
 
 //- works
@@ -390,13 +423,14 @@ header.header
       display: flex
       align-items: center
       margin: 40px 0 0 0
-      .works_block_title_cross
-        font-size: 28px
-        margin: 0 28px 0 0
+      .works_block_title_icon
+        margin: 0 16px 0 0
+        img
+          width: 36px
       .works_block_title_name
-        font-size: 20px
+        font-size: 24px
       pre.works_block_title_sort
-        font-size: 14px
+        font-size: 18px
         margin: 0 0 0 14px
     label
       cursor: pointer
@@ -434,7 +468,7 @@ header.header
         // transition-duration: 0.5s
         .works_block_content
           .works_block_content_title
-            font-size: 14px
+            font-size: 20px
             margin: 52px 0 0 0
           .works_block_content_image_wrapper
             display: flex
@@ -461,9 +495,68 @@ header.header
             img
               height: 180px
 
+//- podcast
+.podcast.container#podcast
+  margin-top: 60px
+  background-color: rgba(#A3C6FE, 0.3)
+  padding-top: 80px
+  padding-bottom: 80px
+  //- 下方圖片資訊
+  .podcast_container
+    display: flex
+    width: 100%
+    .podcast_left
+      img.podcast_cover
+        width: 400px
+        border-radius: 40px
+        box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 35px
+    .podcast_right
+      margin: 0 0 0 60px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .podcast_info
+        img.podcast_logo_title
+          width: 540px
+        .podcast_text
+          color: $color_black
+          margin: 16px 0 0 0
+          font-size: 24px
+          line-height: 40px
+      .podcast_bottom
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        a.podcast_link_button
+          text-decoration: none
+          transition: 0.5s
+          background-color: $color_black
+          border-radius: 12px
+          width: 280px
+          height: 56px
+          .podcast_link_button_content
+            display: flex
+            align-items: center
+            +center
+            img.podcast_link_tri
+              width: 16px
+              margin: 0 8px 0 0
+            .podcast_link_text
+              font-size: 20px
+              color: $color_white
+          &:hover
+            background-color: #A3C6FE
+            transform: translate(0, -4px)
+        a.podcast_link_mic
+          img.podcast_mic
+            width: 60px
+            transition: 0.5s
+            &:hover
+              transform: rotate(10deg)
+
 //- contact
 .contact.container
-  margin-top: 120px
+  margin-top: 60px
   //- 下方三區塊
   .contact_container
     display: flex
@@ -480,6 +573,9 @@ header.header
       padding: 24px 8px
       border-radius: 24px
       box-shadow:1px 1px 24px 1px rgba(#000000, 0.16)
+      cursor: pointer
+      transition: 0.3s
+      text-decoration: none
       img
         width: 120px
       pre.contact_block_text
@@ -487,6 +583,8 @@ header.header
         margin: 24px 0 0 0
         width: 100%
         user-select: text
+      &:hover
+        transform: translate(8px, 8px)
   //- 底部 logo
   .contact_logo_wrapper
     position: absolute
@@ -505,8 +603,15 @@ header.header
 
 // RWD
 
+// body
+@media screen and (max-width: 360px)
+  body
+    margin: 0
+    padding: 0
+    width: 110%
+
 //- nav
-@media screen and (max-width: 770px)
+@media screen and (max-width: 900px)
   nav.nav
     height: $height_nav_sm
     .nav_content
@@ -654,26 +759,28 @@ header.header
 // about 和 works 共通設定
 @media screen and (max-width: 720px)
   .container
-    +middle_margin
+    +middle_padding
+    margin: 0 0 48px 0
 
 @media screen and (max-width: 570px)
   .container
     .container_title
       +small_top_title
+      margin: 0 0 32px 0
 
 @media screen and (max-width: 400px)
   .container
-    +small_margin
+    +small_padding
 
 //- about
 
 //- 教育程度、技能、證書
-@media screen and (max-width: 980px)
+@media screen and (max-width: 1200px)
   .about.container
     .about_group
       .about_top_content
         .about_top_detail
-          .about_top_detail_cross
+          .about_top_detail_icon
             display: none
       //- 技能
       .about_top_content.skills
@@ -681,30 +788,62 @@ header.header
           .about_top_detail_content
             .about_top_detail_content_block
               pre.about_top_detail_content_block_row
-                font-size: 12px
+                font-size: 16px
 
-@media screen and (max-width: 880px)
+@media screen and (max-width: 1080px)
+  .about.container
+    .about_group
+      .about_top_content
+        .about_top_detail
+          .about_top_detail_icon
+            display: none
+      //- 技能
+      .about_top_content.skills
+        .about_top_detail
+          .about_top_detail_content
+            .about_top_detail_content_block
+              pre.about_top_detail_content_block_row
+                font-size: 14px
+                
+@media screen and (max-width: 950px)
   .about.container
     .about_group
       flex-wrap: wrap
+      margin: 0
       .about_top_content
         width: 45%
         .about_top_detail
-          .about_top_detail_cross
+          .about_top_detail_icon
             display: block
       .about_top_content:nth-child(3)
         margin: 52px 0 0 0
+      .about_top_content.experience
+        margin: 52px 0 0 0
+      //- 技能
+      .about_top_content.skills
+        .about_top_detail
+          .about_top_detail_content
+            .about_top_detail_content_block
+              pre.about_top_detail_content_block_row
+                font-size: 16px
 
-@media screen and (max-width: 720px)
+@media screen and (max-width: 790px)
   .about.container
     .about_group
       .about_top_content
         width: 46%
         .about_top_detail
-          .about_top_detail_cross
+          .about_top_detail_icon
             display: none
+      //- 技能
+      .about_top_content.skills
+        .about_top_detail
+          .about_top_detail_content
+            .about_top_detail_content_block
+              pre.about_top_detail_content_block_row
+                font-size: 14px
 
-@media screen and (max-width: 570px)
+@media screen and (max-width: 640px)
   .about.container
     .about_group
       flex-direction: column
@@ -718,7 +857,7 @@ header.header
           .about_top_detail_content
             .about_top_detail_content_block
               pre.about_top_detail_content_block_row
-                font-size: 16px
+                font-size: 20px
 
 @media screen and (max-width: 430px)
   .about.container
@@ -742,19 +881,22 @@ header.header
           //- 區塊
           .about_marketing_block
             .about_marketing_content
+              padding: 16px 8%
               .about_marketing_content_title_wrapper
                 p.name
                   font-size: 20px
                 pre.sort
                   font-size: 14px
-                  margin: 0 0 0 6px
+                  margin: 8px 0 0 0
+                  width: 100%
+              .about_marketing_content_detail
+                text-align: left
+                font-size: 14px
 
-@media screen and (max-width: 1104px)
+@media screen and (max-width: 980px)
   .about.container
     .about_group
       .about_top_content.experience
-        .about_marketing_title_wrapper
-          width: 40%
         //- 八張圖片_集合
         .about_marketing_container
           //- 區塊
@@ -765,51 +907,8 @@ header.header
                   font-size: 16px
                 pre.sort
                   font-size: 12px
-                  margin: 0 0 0 4px
-
-@media screen and (max-width: 964px)
-  .about.container
-    .about_group
-      .about_top_content.experience
-        //- 八張圖片_集合
-        .about_marketing_container
-          //- 區塊
-          .about_marketing_block
-            .about_marketing_content
-              padding: 32px 8%
-              .about_marketing_content_title_wrapper
-                flex-direction: column
-                p.name
-                  font-size: 16px
-                pre.sort
-                  font-size: 12px
-                  margin: 0 0 0 6px
 
 @media screen and (max-width: 900px)
-  .about.container
-    .about_group
-      .about_top_content.experience
-        .about_marketing_title_wrapper
-          width: 46%
-        //- 八張圖片_集合
-        .about_marketing_container
-          //- 區塊
-          .about_marketing_block
-            width: 46%
-            flex-wrap: wrap
-            .about_marketing_content
-              .about_marketing_content_title_wrapper
-                flex-direction: row
-                p.name
-                  font-size: 20px
-                pre.sort
-                  font-size: 16px
-                  margin: 4px 0 0 4px
-          // 偽區塊
-          .about_marketing_block.fake_block
-            display: none
-
-@media screen and (max-width: 820px)
   .about.container
     .about_group
       .about_top_content.experience
@@ -819,18 +918,67 @@ header.header
         .about_marketing_container
           //- 區塊
           .about_marketing_block
+            width: 30%
+            .about_marketing_content
+              hr
+                margin: 16px 0
+          // 偽區塊
+          .about_marketing_block.fake_block
+            display: block
+
+@media screen and (max-width: 780px)
+  .about.container
+    .about_group
+      .about_top_content.experience
+        .about_marketing_container
+          //- 區塊
+          .about_marketing_block
+            width: 32%
+
+@media screen and (max-width: 720px)
+  .about.container
+    .about_group
+      .about_top_content.experience
+        .about_marketing_title_wrapper
+          width: 100%
+        //- 八張圖片_集合
+        .about_marketing_container
+          //- 區塊
+          .about_marketing_block
+            width: 47%
             .about_marketing_content
               .about_marketing_content_title_wrapper
                 p.name
-                  font-size: 16px
+                  font-size: 20px
                 pre.sort
-                  font-size: 12px
-                  margin: 0 0 0 6px
+                  font-size: 14px
+              .about_marketing_content_detail
+                font-size: 14px
+          // 偽區塊
+          .about_marketing_block.fake_block
+            display: none
 
 @media screen and (max-width: 640px)
   .about.container
     .about_group
       .about_top_content.experience
+        //- 整合行銷企劃＿標題
+        .about_marketing_title_wrapper
+          margin: 0
+          .about_marketing_title_wrapper_block
+            img
+              margin: 0 16px 0 0
+            p.title
+              font-size: 20px
+          .year_wrapper
+            p.year
+        .about_marketing_title_wrapper.marketing
+          .about_marketing_text
+            font-size: 16px
+            line-height: 24px
+            margin: 20px 0 32px 0
+          img.none
+            width: 28px
         //- 八張圖片_集合
         .about_marketing_container
           //- 區塊
@@ -838,57 +986,65 @@ header.header
             .about_marketing_content
               padding: 16px 8%
               .about_marketing_content_title_wrapper
-                flex-direction: column
-                margin: 0 0 12px 0
                 p.name
                   font-size: 16px
                 pre.sort
                   font-size: 12px
                   margin: 4px 0 0 4px
+              hr
+                margin: 12px 0
+              .about_marketing_content_detail
+                font-size: 12px
+                line-height: 18px
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 535px)
+  .about.container
+    .about_group
+      .about_top_content.experience
+        //- 整合行銷企劃＿標題
+        .about_marketing_title_wrapper
+          .about_marketing_title_wrapper_block
+            img
+              margin: 0 8px 0 0
+            p.title
+              font-size: 18px
+          .year_wrapper
+            p.year
+        .about_marketing_text
+          font-size: 14px
+          margin: 0 0 16px 0
+
+@media screen and (max-width: 450px)
   .about.container
     .about_group
       .about_top_content.experience
         .about_marketing_title_wrapper
           width: 100%
+          margin: 0
           .about_marketing_title_wrapper_block
-            p.cross
-              font-size: 20px
-              margin: 0 16px 0 0
+            img
+              display: none
             p.title
               font-size: 16px
+        .about_marketing_text
+          font-size: 14px
+          margin: 0 0 8px 0
         //- 八張圖片_集合
         .about_marketing_container
           //- 區塊
           .about_marketing_block
             width: 100%
             .about_marketing_content
-              padding: 32px 8%
+              padding: 16px 8%
               .about_marketing_content_title_wrapper
-                flex-direction: row
                 p.name
                   font-size: 20px
                 pre.sort
-                  font-size: 16px
-                  margin: 4px 0 0 4px
-
-@media screen and (max-width: 360px)
-  .about.container
-    .about_group
-      .about_top_content.experience
-        //- 八張圖片_集合
-        .about_marketing_container
-          //- 區塊
-          .about_marketing_block
-            .about_marketing_content
-              padding: 32px 8%
-              .about_marketing_content_title_wrapper
-                p.name
-                  font-size: 16px
-                pre.sort
-                  font-size: 12px
-                  margin: 0 0 0 6px
+                  font-size: 14px
+                  margin: 4px 0 0 0
+              .about_marketing_content_detail
+                font-size: 14px
+                line-height: 20px
 
 //- 其他_標題
 @media screen and (max-width: 1000px)
@@ -899,58 +1055,75 @@ header.header
           .about_other_block
             width: 100%
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 640px)
   .about.container
     .about_group
       .about_top_content.experience
+        .about_marketing_title_wrapper
+          .about_marketing_title_wrapper_block
+            img
+              width: 28px
         .about_other
           margin: 20px 0 0 0
           .about_other_block
             width: 100%
             margin: 0 0 30px 0
             .about_other_block_container
-              .about_other_block_cross
-                font-size: 28px
-                margin: 0 28px 0 0
+              .about_other_block_icon
+                margin: 0 20px 0 0
+                img
+                  width: 28px
               .about_other_block_detail_wrapper
                 width: 100%
                 .about_other_block_detail_title_wrapper
                   pre.about_other_block_detail_title
-                    font-size: 16px
+                    font-size: 20px
                 .about_other_block_detail_year_wrapper
                   p.year.width
                     padding: 2px 30px
               .about_other_block_detail_text
-                font-size: 12px
-                margin: 0
+                font-size: 16px
+                line-height: 24px
+                margin: 20px 0 0 0
 
-@media screen and (max-width: 460px)
+@media screen and (max-width: 535px)
   .about.container
     .about_group
       .about_top_content.experience
         .about_other
           .about_other_block
             .about_other_block_container
+              .about_other_block_icon
+                margin: 0 16px 0 0
               .about_other_block_detail_wrapper
                 .about_other_block_detail_title_wrapper
                   pre.about_other_block_detail_title
-                    font-size: 12px
+                    font-size: 18px
                     font-weight: 500
+              .about_other_block_detail_text
+                font-size: 14px
+                margin: 16px 0 0 0
 
-@media screen and (max-width: 350px)
+@media screen and (max-width: 480px)
   .about.container
     .about_group
       .about_top_content.experience
         .about_marketing_title_wrapper
-          margin: 0px 0 24px 0
           .about_marketing_title_wrapper_block
-            p.cross
+            img
               display: none
         .about_other
           .about_other_block
             .about_other_block_container
-              .about_other_block_cross
+              .about_other_block_icon
                 display: none
+              .about_other_block_detail_wrapper
+                .about_other_block_detail_title_wrapper
+                  pre.about_other_block_detail_title
+                    font-size: 16px
+              .about_other_block_detail_text
+                font-size: 14px
+                margin: 8px 0 0 0
 
 //- works
 @media screen and (max-width: 1200px)
@@ -1115,11 +1288,23 @@ header.header
   .works.container
     //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
     .works_block
+      .works_block_title_wrapper
+        .works_block_title_icon
+          margin: 0 12px 0 0
+          img
+            width: 28px
+        .works_block_title_name
+          font-size: 20px
+        pre.works_block_title_sort
+          font-size: 16px
       label
         // 各個隱藏高度尺寸 - 瑪莉雅之吻
         .label_wrapper
           height: 240px
           .works_block_content
+            .works_block_content_title
+              font-size: 16px
+              margin: 40px 0 0 0
             .works_block_content_image_wrapper
               img
                 height: 120px
@@ -1138,36 +1323,109 @@ header.header
               img.maria.fack_picture:nth-child(21)
                 display: none
 
+//- podcast
+@media screen and (max-width: 1100px)
+  .podcast.container#podcast
+    //- 下方圖片資訊
+    .podcast_container
+      .podcast_left
+        img.podcast_cover
+          width: 320px
+      .podcast_right
+        margin: 0 0 0 60px
+        .podcast_info
+          img.podcast_logo_title
+            width: 360px
+          .podcast_text
+        .podcast_bottom
+          a.podcast_link_button
+            border-radius: 12px
+            width: 280px
+            height: 44px
+          a.podcast_link_mic
+            img.podcast_mic
+              width: 40px
 
-
-contact
-@media screen and (max-width: 1170px)
-  .contact.container
-    margin-top: 120px
-    //- 下方三區塊
-    .contact_container
-      display: flex
-      justify-content: space-between
-      width: 100%
-      .contact_block
-        display: flex
-        flex-direction: column
+@media screen and (max-width: 1000px)
+  .podcast.container#podcast
+    margin-top: 60px
+    padding-top: 80px
+    padding-bottom: 80px
+    .podcast_container
+      flex-direction: column
+      align-items: center
+      // 上方封面圖片
+      .podcast_left
+        img.podcast_cover
+          width: 280px
+      // 下方資訊內容
+      .podcast_right
+        margin: 0
         align-items: center
-        justify-content: center
-        width: 30%
-        text-align: center
-        background-color: $color_white
-        padding: 24px 8px
-        border-radius: 24px
-        box-shadow:1px 1px 24px 1px rgba(#000000, 0.16)
-        img
-          width: 120px
-        pre.contact_block_text
-          font-size: 24px
-          margin: 24px 0 0 0
-          width: 100%
+        .podcast_info
+          display: flex
+          flex-direction: column
+          align-items: center
+          img.podcast_logo_title
+            width: 280px
+            margin: 60px 0 24px 0
+          .podcast_text
+            margin: 0
+            width: 640px
+            font-size: 20px
+            line-height: 32px
+        .podcast_bottom
+          display: flex
+          flex-direction: column
+          align-items: center
+          a.podcast_link_button
+            border-radius: 12px
+            width: 280px
+            height: 44px
+            margin: 32px 0
+            .podcast_link_button_content
+              img.podcast_link_tri
+                width: 16px
+                margin: 0 8px 0 0
+              .podcast_link_text
+                font-size: 16px
+          a.podcast_link_mic
+            img.podcast_mic
+              width: 40px
 
-@media screen and (max-width: 1120px)
+@media screen and (max-width: 840px)
+  .podcast.container#podcast
+    .podcast_container
+      // 下方資訊內容
+      .podcast_right
+        .podcast_info
+          img.podcast_logo_title
+          .podcast_text
+            width: 100%
+
+@media screen and (max-width: 570px)
+  .podcast.container#podcast
+    .podcast_container
+      // 上方封面圖片
+      .podcast_left
+        img.podcast_cover
+          margin: 60px 0 0 0
+          width: 240px
+      // 下方資訊內容
+      .podcast_right
+        .podcast_info
+          img.podcast_logo_title
+            width: 240px
+          .podcast_text
+            font-size: 16px
+            line-height: 28px
+        .podcast_bottom
+          a.podcast_link_button
+            width: 240px
+
+
+// contact
+@media screen and (max-width: 1170px)
   .contact.container
     //- 下方三區塊
     .contact_container

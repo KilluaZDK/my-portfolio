@@ -16,6 +16,9 @@ nav.nav
         a.nav_text(href="#works") Works
       span.line
       li
+        a.nav_text(href="#podcast") Podcast
+      span.line
+      li
         a.nav_text(href="#contact") Contact
 
 
@@ -57,7 +60,7 @@ header.header
         img(src=require("../images/about_title_education.svg"))
       .about_top_detail
         .about_top_detail_wrapper
-          .about_top_detail_cross +
+          .about_top_detail_icon ▻
           .about_top_detail_content
             .about_top_detail_content_block
               .about_top_detail_content_block_top
@@ -67,7 +70,7 @@ header.header
               .about_top_detail_content_block_botton
                 p.english SHIH HSIN UNIVERSITY
         .about_top_detail_wrapper
-          .about_top_detail_cross.none +
+          .about_top_detail_icon.none ▻
           .about_top_detail_content
             .about_top_detail_content_block
               .about_top_detail_content_block_top
@@ -87,17 +90,17 @@ header.header
       .about_top_detail
         .about_top_detail_content
           .about_top_detail_content_block
-            pre.about_top_detail_content_block_row + 日文翻譯
-            pre.about_top_detail_content_block_row + 平面設計
-            pre.about_top_detail_content_block_row + 整合行銷
-            pre.about_top_detail_content_block_row + 社群行銷
-            pre.about_top_detail_content_block_row + UI 設計
+            pre.about_top_detail_content_block_row ▻ 日文翻譯
+            pre.about_top_detail_content_block_row ▻ 整合行銷
+            pre.about_top_detail_content_block_row ▻ 平面設計
+            pre.about_top_detail_content_block_row ▻ Excel
+            pre.about_top_detail_content_block_row ▻ Word
           .about_top_detail_content_block
-            pre.about_top_detail_content_block_row + Sketch
-            pre.about_top_detail_content_block_row + Adobe XD
-            pre.about_top_detail_content_block_row + Adobe illustrator
-            pre.about_top_detail_content_block_row + Adobe Photoshop
-            pre.about_top_detail_content_block_row + HTML / CSS
+            pre.about_top_detail_content_block_row ▻ Sketch
+            pre.about_top_detail_content_block_row ▻ Adobe XD
+            pre.about_top_detail_content_block_row ▻ Adobe illustrator
+            pre.about_top_detail_content_block_row ▻ Adobe Photoshop
+            pre.about_top_detail_content_block_row ▻ HTML / CSS
     //- 證書
     .about_top_content.certificate
       .about_top_title
@@ -110,7 +113,7 @@ header.header
         img(src=require("../images/about_title_certificate.svg"))
       .about_top_detail
         .about_top_detail_wrapper
-          .about_top_detail_cross +
+          .about_top_detail_icon ▻
           .about_top_detail_content
             .about_top_detail_content_block
               .about_top_detail_content_block_top
@@ -133,11 +136,15 @@ header.header
       //- 整合行銷企劃＿標題
       .about_marketing_title_wrapper
         .about_marketing_title_wrapper_block
-          p.cross +
+          img(src=require("../images/about_phase_icon.svg"))
           p.title 整合行銷企劃
         .year_wrapper
           p.year 2013 -2021
-      //- 六張圖片
+      .about_marketing_title_wrapper.marketing
+        .about_marketing_title_wrapper_block
+          img.none(src=require("../images/about_phase_icon.svg"))
+        .about_marketing_text FB 社群經營、品牌識別設計、產品包裝設計、各類型錄設計、展場規劃與設計、行銷文案、行銷活動企劃與執行
+      //- 八張圖片＿集合
       .about_marketing_container
         //- 毛天使
         .about_marketing_block
@@ -146,7 +153,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 毛天使
-              pre.sort / 寵物清潔用品
+              pre.sort 寵物清潔用品
+            hr
             .about_marketing_content_detail FB 社群經營、品牌識別設計、產品包裝設計、型錄設計、展場規劃與設計、行銷文案
         //- 欣湛
         .about_marketing_block
@@ -155,7 +163,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 欣湛
-              pre.sort / 居家清潔用品
+              pre.sort 居家清潔用品
+            hr
             .about_marketing_content_detail FB 社群經營、品牌識別設計、產品包裝設計、型錄設計、行銷文案
         //- 瑪莉雅之吻
         .about_marketing_block
@@ -164,7 +173,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 瑪莉雅之吻
-              pre.sort / 婦嬰清潔用品
+              pre.sort 婦嬰清潔用品
+            hr
             .about_marketing_content_detail FB 社群經營、品牌識別設計、產品包裝設計、型錄設計、行銷文案
         //- Conti
         .about_marketing_block
@@ -173,7 +183,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name Conti
-              pre.sort / 球類運動品牌
+              pre.sort 球類運動品牌
+            hr
             .about_marketing_content_detail FB 社群經營、平面廣告設計、捷運燈箱及公車廣告設計
         //- 聯維
         .about_marketing_block
@@ -182,7 +193,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 聯維
-              pre.sort / 有線電視公司
+              pre.sort 有線電視公司
+            hr
             .about_marketing_content_detail FB 社群經營、行銷活動企劃與執行
         //- 經濟部
         .about_marketing_block
@@ -191,7 +203,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 經濟部
-              pre.sort / 雲端創新應用服務競賽
+              pre.sort 雲端創新應用服務競賽
+            hr
             .about_marketing_content_detail 活動主辦、宣傳物設計
         //- 雅莉珊卓
         .about_marketing_block
@@ -200,7 +213,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 雅莉珊卓
-              pre.sort / 身體洗淨系列用品
+              pre.sort 身體洗淨系列用品
+            hr
             .about_marketing_content_detail 包裝設計
         //- 富盛豐
         .about_marketing_block
@@ -209,7 +223,8 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 富盛豐
-              pre.sort / 洗淨系列品牌
+              pre.sort 洗淨系列品牌
+            hr
             .about_marketing_content_detail 官網 Banner 設計
         //- 第九區塊 偽區塊
         .about_marketing_block.fake_block
@@ -218,24 +233,28 @@ header.header
           .about_marketing_content
             .about_marketing_content_title_wrapper
               p.name 偽區塊
-              pre.sort / 偽品牌
+              pre.sort 偽品牌
+            hr
             .about_marketing_content_detail 偽設計
       //- 其他_標題
       .about_other
         .about_other_block
           .about_other_block_container
-            .about_other_block_cross +
+            .about_other_block_icon
+              img(src=require("../images/about_phase_icon.svg"))
             .about_other_block_detail_wrapper
               .about_other_block_detail_title_wrapper
                 pre.about_other_block_detail_title 日文文書翻譯
               .about_other_block_detail_year_wrapper
                 p.year.width 2021
           .about_other_block_container
-            .about_other_block_cross.none +
+            .about_other_block_icon.none
+              img(src=require("../images/about_phase_icon.svg"))
             .about_other_block_detail_text 企業內部文書等案件翻譯。
         .about_other_block
           .about_other_block_container
-            .about_other_block_cross +
+            .about_other_block_icon
+              img(src=require("../images/about_phase_icon.svg"))
             .about_other_block_detail_wrapper
               .about_other_block_detail_title_wrapper
                 pre.about_other_block_detail_title 世新大學 傳播管理學系
@@ -243,11 +262,13 @@ header.header
               .about_other_block_detail_year_wrapper
                 p.year 2013、2014
           .about_other_block_container
-            .about_other_block_cross.none +
+            .about_other_block_icon.none
+              img(src=require("../images/about_phase_icon.svg"))
             .about_other_block_detail_text 用比較有趣、貼近大家生活的方式，教高中生們 Photoshop 的基礎技巧。
         .about_other_block
           .about_other_block_container
-            .about_other_block_cross +
+            .about_other_block_icon
+              img(src=require("../images/about_phase_icon.svg"))
             .about_other_block_detail_wrapper
               .about_other_block_detail_title_wrapper
                 pre.about_other_block_detail_title 世新大學 傳播管理學系
@@ -255,7 +276,8 @@ header.header
               .about_other_block_detail_year_wrapper
                 p.year 2011 - 2012
           .about_other_block_container
-            .about_other_block_cross.none +
+            .about_other_block_icon.none
+              img(src=require("../images/about_phase_icon.svg"))
             .about_other_block_detail_text 協助課堂教師上課事宜。
 //- works
 .works.container#works
@@ -273,7 +295,8 @@ header.header
   //- 毛天使
   .works_block
     .works_block_title_wrapper
-      .works_block_title_cross ＋
+      .works_block_title_icon 
+        img(src=require("../images/about_phase_icon.svg"))
       .works_block_title_name 毛天使
       pre.works_block_title_sort / 寵物清潔用品
     label
@@ -310,20 +333,21 @@ header.header
         .works_block_content
           .works_block_content_title 型錄設計
           .works_block_content_image_wrapper
-            img(src=require("../images/petangel_1.png"))
-            img(src=require("../images/petangel_2.png"))
-            img(src=require("../images/petangel_3.png"))
-            img(src=require("../images/petangel_4.png"))
+            img(src=require("../images/petangel_1.svg"))
+            img(src=require("../images/petangel_2.svg"))
+            img(src=require("../images/petangel_3.svg"))
+            img(src=require("../images/petangel_4.svg"))
         .works_block_content
           .works_block_content_title 名片、LOGO 設計
           .works_block_content_image_wrapper.typesetting_start.img_small_height
-            img(src=require("../images/petangel_card.png"))
-            img(src=require("../images/petangel_logo.png"))
+            img(src=require("../images/petangel_card.svg"))
+            img(src=require("../images/petangel_logo.svg"))
       pre.works_more_button More
   //- 欣湛
   .works_block
     .works_block_title_wrapper
-      .works_block_title_cross ＋
+      .works_block_title_icon 
+        img(src=require("../images/about_phase_icon.svg"))
       .works_block_title_name 新湛
       pre.works_block_title_sort / 居家清潔用品
     label
@@ -332,24 +356,25 @@ header.header
         .works_block_content
           .works_block_content_title 消臭系列包裝設計
           .works_block_content_image_wrapper.typesetting_start
-            img(src=require("../images/cleaner_1.png"))
-            img(src=require("../images/cleaner_2.png"))
-            img(src=require("../images/cleaner_3.png"))
+            img(src=require("../images/cleaner_1.svg"))
+            img(src=require("../images/cleaner_2.svg"))
+            img(src=require("../images/cleaner_3.svg"))
         .works_block_content
           .works_block_content_title 居家清潔系列包裝設計
           .works_block_content_image_wrapper.typesetting_start
-            img(src=require("../images/cleaner_4.png"))
-            img(src=require("../images/cleaner_5.png"))
-            img(src=require("../images/cleaner_6.png"))
-            img(src=require("../images/cleaner_7.png"))
-            img(src=require("../images/cleaner_8.png"))
-            img(src=require("../images/cleaner_9.png"))
-            img(src=require("../images/cleaner_10.png"))
+            img(src=require("../images/cleaner_4.svg"))
+            img(src=require("../images/cleaner_5.svg"))
+            img(src=require("../images/cleaner_6.svg"))
+            img(src=require("../images/cleaner_7.svg"))
+            img(src=require("../images/cleaner_8.svg"))
+            img(src=require("../images/cleaner_9.svg"))
+            img(src=require("../images/cleaner_10.svg"))
       pre.works_more_button More
   //- 瑪莉雅之吻
   .works_block
     .works_block_title_wrapper
-      .works_block_title_cross ＋
+      .works_block_title_icon 
+        img(src=require("../images/about_phase_icon.svg"))
       .works_block_title_name 瑪莉雅之吻
       pre.works_block_title_sort / 婦嬰清潔用品
     label
@@ -358,33 +383,34 @@ header.header
         .works_block_content
           .works_block_content_title 包裝、型錄、ＤＭ、LOGO 設計
           .works_block_content_image_wrapper
-            img.maria(src=require("../images/maria_1.png"))
-            img.maria(src=require("../images/maria_2.png"))
-            img.maria(src=require("../images/maria_3.png"))
-            img.maria(src=require("../images/maria_4.png"))
-            img.maria(src=require("../images/maria_5.png"))
-            img.maria(src=require("../images/maria_6.png"))
-            img.maria(src=require("../images/maria_7.png"))
-            img.maria(src=require("../images/maria_8.png"))
-            img.maria(src=require("../images/maria_9.png"))
-            img.maria(src=require("../images/maria_10.png"))
-            img.maria(src=require("../images/maria_11.png"))
-            img.maria(src=require("../images/maria_12.png"))
-            img.maria(src=require("../images/maria_13.png"))
-            img.maria(src=require("../images/maria_14.png"))
-            img.maria(src=require("../images/maria_15.png"))
-            img.maria(src=require("../images/maria_16.png"))
-            img.maria(src=require("../images/maria_17.png"))
-            img.maria(src=require("../images/maria_18.png"))
-            img.maria(src=require("../images/maria_19.png"))
-            img.maria(src=require("../images/maria_20.png"))
+            img.maria(src=require("../images/maria_1.svg"))
+            img.maria(src=require("../images/maria_2.svg"))
+            img.maria(src=require("../images/maria_3.svg"))
+            img.maria(src=require("../images/maria_4.svg"))
+            img.maria(src=require("../images/maria_5.svg"))
+            img.maria(src=require("../images/maria_6.svg"))
+            img.maria(src=require("../images/maria_7.svg"))
+            img.maria(src=require("../images/maria_8.svg"))
+            img.maria(src=require("../images/maria_9.svg"))
+            img.maria(src=require("../images/maria_10.svg"))
+            img.maria(src=require("../images/maria_11.svg"))
+            img.maria(src=require("../images/maria_12.svg"))
+            img.maria(src=require("../images/maria_13.svg"))
+            img.maria(src=require("../images/maria_14.svg"))
+            img.maria(src=require("../images/maria_15.svg"))
+            img.maria(src=require("../images/maria_16.svg"))
+            img.maria(src=require("../images/maria_17.svg"))
+            img.maria(src=require("../images/maria_18.svg"))
+            img.maria(src=require("../images/maria_19.svg"))
+            img.maria(src=require("../images/maria_20.svg"))
             //- 偽圖片
-            img.maria.fack_picture(src=require("../images/maria_20.png"))
+            img.maria.fack_picture(src=require("../images/maria_20.svg"))
       pre.works_more_button More
   //- 雅莉珊卓
   .works_block
     .works_block_title_wrapper
-      .works_block_title_cross ＋
+      .works_block_title_icon 
+        img(src=require("../images/about_phase_icon.svg"))
       .works_block_title_name 雅莉珊卓
       pre.works_block_title_sort / 身體洗淨系列用品
     label
@@ -393,26 +419,27 @@ header.header
         .works_block_content
           .works_block_content_title 包裝設計
           .works_block_content_image_wrapper
-            img(src=require("../images/alexandra_1.png"))
-            img(src=require("../images/alexandra_2.png"))
-            img(src=require("../images/alexandra_3.png"))
-            img(src=require("../images/alexandra_4.png"))
-            img(src=require("../images/alexandra_5.png"))
-            img(src=require("../images/alexandra_6.png"))
-            img(src=require("../images/alexandra_7.png"))
-            img(src=require("../images/alexandra_8.png"))
-            img(src=require("../images/alexandra_9.png"))
+            img(src=require("../images/alexandra_1.svg"))
+            img(src=require("../images/alexandra_2.svg"))
+            img(src=require("../images/alexandra_3.svg"))
+            img(src=require("../images/alexandra_4.svg"))
+            img(src=require("../images/alexandra_5.svg"))
+            img(src=require("../images/alexandra_6.svg"))
+            img(src=require("../images/alexandra_7.svg"))
+            img(src=require("../images/alexandra_8.svg"))
+            img(src=require("../images/alexandra_9.svg"))
             //- 偽圖片
-            img.fack_picture(src=require("../images/alexandra_9.png"))
-            img.fack_picture(src=require("../images/alexandra_9.png"))
-            img.fack_picture(src=require("../images/alexandra_9.png"))
-            img.fack_picture(src=require("../images/alexandra_9.png"))
-            img.fack_picture(src=require("../images/alexandra_9.png"))
+            img.fack_picture(src=require("../images/alexandra_9.svg"))
+            img.fack_picture(src=require("../images/alexandra_9.svg"))
+            img.fack_picture(src=require("../images/alexandra_9.svg"))
+            img.fack_picture(src=require("../images/alexandra_9.svg"))
+            img.fack_picture(src=require("../images/alexandra_9.svg"))
       pre.works_more_button More
   //- 富盛豐
   .works_block
     .works_block_title_wrapper
-      .works_block_title_cross ＋
+      .works_block_title_icon 
+        img(src=require("../images/about_phase_icon.svg"))
       .works_block_title_name 富盛豐
       pre.works_block_title_sort / 洗淨系列品牌
     label
@@ -421,11 +448,30 @@ header.header
         .works_block_content
           .works_block_content_title 官網 Banner 設計
           .works_block_content_image_wrapper.height
-            img.fu(src=require("../images/fu_1.jpg"))
-            img.fu(src=require("../images/fu_2.jpg"))
-            img.fu(src=require("../images/fu_3.jpg"))
-            img.fu(src=require("../images/fu_4.jpg"))
+            img.fu(src=require("../images/fu_1.svg"))
+            img.fu(src=require("../images/fu_2.svg"))
+            img.fu(src=require("../images/fu_3.svg"))
+            img.fu(src=require("../images/fu_4.svg"))
       pre.works_more_button More
+//- podcast
+.podcast.container#podcast
+  .container_title Podcast
+  //- 下方圖片資訊
+  .podcast_container
+    .podcast_left
+      img.podcast_cover(src=require("../images/podcast_cover.svg"))
+    .podcast_right
+      .podcast_info
+        img.podcast_logo_title(src=require("../images/podcast_logo_title.svg"))
+        .podcast_text 《日本好開心》陪你一起聊動漫、聊旅遊、聊學習日文、聊日本。不定時切換中日文雙聲道，和大家一起有的沒的亂亂聊。在一成不變的日常當中，一起尋找生活樂趣！
+      .podcast_bottom
+        a.podcast_link_button(href="https://open.firstory.me/user/japan-happy/platforms" target="_blank" rel="noreferrer noopener")
+          .podcast_link_button_content
+            img.podcast_link_tri(src=require("../images/podcast_triangle.svg"))
+            .podcast_link_text 點我收聽
+        a.podcast_link_mic(href="https://open.firstory.me/user/japan-happy/platforms" target="_blank" rel="noreferrer noopener")
+          img.podcast_mic(src=require("../images/podcast_mic.svg",))
+
 //- contact
 .contact.container#contact
   .container_title Contact
@@ -433,13 +479,13 @@ header.header
   .contact_container
     .contact_block
       img(src=require("../images/contact_icon_phone.svg"))
-      pre.contact_block_text 0937 - 466 - 446
-    .contact_block
+      pre.contact_block_text Resume
+    a.contact_block(href="mailto:unhunsowhat_nini@hotmail.com" target="_blank" rel="noreferrer noopener")
       img(src=require("../images/contact_icon_mail.svg"))
       pre.contact_block_text unhunsowhat@gmail.com
-    .contact_block
+    a.contact_block(href="https://codepen.io/killuazdk/pen/jOOXwqj" target="_blank" rel="noreferrer noopener")
       img(src=require("../images/contact_icon_web.svg"))
-      pre.contact_block_text github.com/KilluaZDK
+      pre.contact_block_text Web Design
   //- 底部 logo
   .contact_logo_wrapper
     img.contact_logo(src=require("../images/header_logo_illustration.svg"))
