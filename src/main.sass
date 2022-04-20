@@ -707,19 +707,22 @@ header.header
     padding-top: $height_nav_sm
     margin-bottom: 80px
     .header_content
-      width: 530px
+      width: 581px
 
-@media screen and (max-width: 680px)
+@media screen and (max-width: 700px)
   header.header
     .header_content
-      width: 440px
+      width: 460px
+      .header_bottom
+        bottom: 40px
 
 @media screen and (max-width: 570px)
   header.header
     .header_content
-      width: 380px
+      width: 400px
       //- 下方文字區
       .header_bottom
+        bottom: 60px
         .header_bottom_content
           .header_bottom_text.large_screen
             display: none
@@ -729,14 +732,15 @@ header.header
 @media screen and (max-width: 530px)
   header.header
     .header_content
-      width: 330px
+      // width: 330px
       //- 下方文字區
       .header_bottom
+        bottom: 54px
         .header_bottom_content
           .header_bottom_title
-            font-size: 16px
+            font-size: 18px
           .header_bottom_text
-            font-size: 14px
+            font-size: 16px
           //- 按鈕
         .header_bottom_button
           width: 40px
@@ -744,17 +748,27 @@ header.header
           img
             width: 40px
 
-@media screen and (max-width: 430px)
+@media screen and (max-width: 490px)
   header.header
     .header_content
-      width: 300px
+      width: 360px
+
+@media screen and (max-width: 440px)
+  header.header
+    .header_content
+      width: 330px
       //- 下方文字區
       .header_bottom
         .header_bottom_content
           .header_bottom_title
-            font-size: 14px
+            // font-size: 16px
           .header_bottom_text
-            font-size: 14px
+            // font-size: 14px
+
+@media screen and (max-width: 396px)
+  header.header
+    .header_content
+      width: 300px
 
 // about 和 works 共通設定
 @media screen and (max-width: 720px)
