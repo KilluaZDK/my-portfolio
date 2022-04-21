@@ -127,7 +127,7 @@ nav.nav
           &:hover
             color: $color_blue
             transform: translate(4px, 4px)
-            
+
       li ~ li
         margin: 0 0 0 40px
 
@@ -432,68 +432,60 @@ header.header
       pre.works_block_title_sort
         font-size: 18px
         margin: 0 0 0 14px
-    label
+    // MORE 按鈕
+    pre.works_more_button
       cursor: pointer
-      // MORE 按鈕
-      pre.works_more_button
-        margin: 32px auto 0 auto
-        padding: 8px 8px
-        width: 100%
-        font-size: 28px
-        text-align: center
-        font-weight: 500
-        letter-spacing: 4px
-        border: 2px solid $color_blue
-        background-color: $color_blue
-        color: $color_background
-        border-radius: 60px
-        width: 120px
-        box-shadow:1px 1px 4px 1px rgba($color_blue, 0.25)
-        transition-duration: 0.3s
-        &:hover
-          border: 2px solid $color_black
-          background-color: $color_black
-          box-shadow:1px 1px 4px 1px rgba($color_black, 0.25)
-          transform: scale(1.1)
-      // checkbox
-      #switch
-        display: none
-      #switch:checked+.label_wrapper
-        height: 100%
-        // height: 800px
-      // 各個隱藏高度尺寸
-      .label_wrapper
-        height: 360px
-        overflow: hidden
-        // transition-duration: 0.5s
-        .works_block_content
-          .works_block_content_title
-            font-size: 20px
-            margin: 52px 0 0 0
-          .works_block_content_image_wrapper
-            display: flex
-            justify-content: space-between
-            flex-wrap: wrap
-            img
-              height: 240px
-              border-radius: 16px
-              margin: 32px 0 0 0
-            // 毛天使 偽圖片
-            img.fack_picture.petangel
-              display: none
-            // 瑪莉雅之吻 偽圖片
-            img.maria.fack_picture
-              display: none
-            // 雅莉珊卓 偽圖片
-            img.fack_picture
-              opacity: 0
-          .works_block_content_image_wrapper.typesetting_start
-            justify-content: flex-start
-            img
-              margin: 32px 32px 0 0
-          .works_block_content_image_wrapper.typesetting_start.img_small_height
-            img
-              height: 180px
+      margin: 32px auto 0 auto
+      padding: 8px 8px
+      font-size: 28px
+      text-align: center
+      font-weight: 500
+      letter-spacing: 4px
+      border: 2px solid $color_blue
+      background-color: $color_blue
+      color: $color_background
+      border-radius: 60px
+      width: 160px
+      box-shadow:1px 1px 4px 1px rgba($color_blue, 0.25)
+      transition-duration: 0.3s
+      &:hover
+        border: 2px solid $color_black
+        background-color: $color_black
+        box-shadow:1px 1px 4px 1px rgba($color_black, 0.25)
+        transform: scale(1.1)
+    // 各個隱藏高度尺寸
+    .label_wrapper
+      height: 360px
+      overflow: hidden
+      // transition-duration: 0.5s
+      .works_block_content
+        .works_block_content_title
+          font-size: 20px
+          margin: 52px 0 0 0
+        .works_block_content_image_wrapper
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          img
+            height: 240px
+            border-radius: 16px
+            margin: 32px 0 0 0
+          // 毛天使 偽圖片
+          img.fack_picture.petangel
+            display: none
+          // 瑪莉雅之吻 偽圖片
+          img.maria.fack_picture
+            display: none
+          // 雅莉珊卓 偽圖片
+          img.fack_picture
+            opacity: 0
+        .works_block_content_image_wrapper.typesetting_start
+          justify-content: flex-start
+          img
+            margin: 32px 32px 0 0
+        .works_block_content_image_wrapper.typesetting_start.img_small_height
+          img
+            height: 180px
 
 //- podcast
 .podcast.container#podcast
@@ -818,7 +810,7 @@ header.header
             .about_top_detail_content_block
               pre.about_top_detail_content_block_row
                 font-size: 14px
-                
+
 @media screen and (max-width: 950px)
   .about.container
     .about_group
@@ -1203,19 +1195,18 @@ header.header
   .works.container
     //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
     .works_block
-      label
-        // MORE 按鈕
-        pre.works_more_button
-          transform: scale(0.7)
-          &:hover
-            transform: scale(0.8)
-        // 各個隱藏高度尺寸
-        .label_wrapper
-          height: 300px
-          .works_block_content
-            .works_block_content_image_wrapper
-              img
-                height: 180px
+      // MORE 按鈕
+      pre.works_more_button
+        transform: scale(0.7)
+        &:hover
+          transform: scale(0.8)
+      // 各個隱藏高度尺寸
+      .label_wrapper
+        height: 300px
+        .works_block_content
+          .works_block_content_image_wrapper
+            img
+              height: 180px
 
 @media screen and (max-width: 826px)
   .works.container

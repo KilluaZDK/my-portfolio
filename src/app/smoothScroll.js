@@ -5,14 +5,13 @@ export default function smoothScroll() {
 
       const hash = this.hash
 
-      console.log()
       $('input#nav_switch').prop('checked', false)
 
       $('html, body').animate(
         {
           scrollTop: $(hash).offset().top - 80,
         },
-        800,
+        'slow',
         function () {
           window.history.replaceState(null, null, `${window.location.origin}/${hash}`)
         }
