@@ -149,23 +149,28 @@ header.header
     height: 100%
     //- 上方圖logo 圖片區
     .header_top
-      width: 100%
+      height: calc(100% - 340px)
+      display: flex
+      justify-content: center
+      padding: 20px
       img.header_top_logo
-        width: 70%
-        margin: 60px 20%
-        transform: translateX(-10%)
+        height: 100%
       img.header_top_name
-        width: 20%
+        height: 40%
         position: absolute
         top: 50%
-        left: 85%
+        left: 50%
+        transform: translateX(150%)
 
     //- 下方文字區
     .header_bottom
+      box-sizing: border-box
       width: 100%
       text-align: center
       position: absolute
       bottom: 0
+      left: 50%
+      transform: translateX(-50%)
       margin: 24px 0
       display: flex
       flex-direction: column
@@ -183,8 +188,6 @@ header.header
           font-size: 18px
           margin: 0 0 8px 0
           line-height: 26px
-        .header_bottom_text.small_screen
-          display: none
         //- 按鈕
       .header_bottom_button
         width: 48px
@@ -692,75 +695,14 @@ header.header
 @media screen and (max-width: 1048px)
   header.header
     .header_content
-      width: 600px
+      width: 80%
 
-@media screen and (max-width: 770px)
-  header.header
-    padding-top: $height_nav_sm
-    margin-bottom: 80px
-    .header_content
-      width: 581px
-
-@media screen and (max-width: 700px)
+@media screen and (max-width: 720px)
   header.header
     .header_content
-      width: 460px
+      width: 100%
       .header_bottom
-        bottom: 40px
-
-@media screen and (max-width: 570px)
-  header.header
-    .header_content
-      width: 400px
-      //- 下方文字區
-      .header_bottom
-        bottom: 60px
-        .header_bottom_content
-          .header_bottom_text.large_screen
-            display: none
-          .header_bottom_text.small_screen
-            display: block
-
-@media screen and (max-width: 530px)
-  header.header
-    .header_content
-      // width: 330px
-      //- 下方文字區
-      .header_bottom
-        bottom: 54px
-        .header_bottom_content
-          .header_bottom_title
-            font-size: 18px
-          .header_bottom_text
-            font-size: 16px
-          //- 按鈕
-        .header_bottom_button
-          width: 40px
-          height: 40px
-          img
-            width: 40px
-
-@media screen and (max-width: 490px)
-  header.header
-    .header_content
-      width: 360px
-
-@media screen and (max-width: 440px)
-  header.header
-    .header_content
-      width: 330px
-      //- 下方文字區
-      .header_bottom
-        .header_bottom_content
-          .header_bottom_title
-            // font-size: 16px
-          .header_bottom_text
-            // font-size: 14px
-
-@media screen and (max-width: 396px)
-  header.header
-    .header_content
-      width: 300px
+        padding: 0 20px
 
 // about 和 works 共通設定
 @media screen and (max-width: 720px)
@@ -976,8 +918,6 @@ header.header
               margin: 0 16px 0 0
             p.title
               font-size: 20px
-          .year_wrapper
-            p.year
         .about_marketing_title_wrapper.marketing
           .about_marketing_text
             font-size: 16px
@@ -1014,8 +954,6 @@ header.header
               margin: 0 8px 0 0
             p.title
               font-size: 18px
-          .year_wrapper
-            p.year
         .about_marketing_text
           font-size: 14px
           margin: 0 0 16px 0
@@ -1320,7 +1258,6 @@ header.header
     .works_block
       label
         // 各個隱藏高度尺寸
-        .label_wrapper
         .label_wrapper.brand_maria
           .works_block_content
             .works_block_content_image_wrapper
@@ -1341,7 +1278,6 @@ header.header
         .podcast_info
           img.podcast_logo_title
             width: 360px
-          .podcast_text
         .podcast_bottom
           a.podcast_link_button
             border-radius: 12px
@@ -1404,7 +1340,6 @@ header.header
       // 下方資訊內容
       .podcast_right
         .podcast_info
-          img.podcast_logo_title
           .podcast_text
             width: 100%
 
