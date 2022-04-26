@@ -84,6 +84,9 @@ body
   user-select: none
   font-family: 'Sen', '儷黑 Pro', 'LiHei Pro', '微軟正黑體', 'Microsoft JhengHei', sans-serif
 
+#root
+  height: 100%
+
 //- nav
 nav.nav
   position: fixed
@@ -142,7 +145,7 @@ nav.nav
 
 //- header
 header.header
-  height: 100vh
+  height: 100%
   padding: $height_nav 0
   margin-bottom: 120px
 
@@ -163,7 +166,7 @@ header.header
       width: 100%
       text-align: center
       position: absolute
-      bottom: 0
+      bottom: 36px
       display: flex
       flex-direction: column
       align-items: center
@@ -699,9 +702,9 @@ header.header
     .header_content
       width: 100%
       .header_top
-        padding: 0 20px 0 20px
+        padding: 0 20px
       .header_bottom
-        padding: 0 20px 36px 20px
+        padding: 0 20px
         .header_bottom_content
           .header_bottom_title
             font-size: 1.6rem
