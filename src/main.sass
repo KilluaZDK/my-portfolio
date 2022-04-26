@@ -80,12 +80,12 @@ body
   vertical-align: middle
   position: relative
   box-sizing: border-box
+  -webkit-user-select: none
   user-select: none
   font-family: 'Sen', '儷黑 Pro', 'LiHei Pro', '微軟正黑體', 'Microsoft JhengHei', sans-serif
 
 //- nav
 nav.nav
-  // box-shadow: 0px 5px 10px 0px #aaa
   position: fixed
   width: 100%
   height: $height_nav
@@ -109,14 +109,14 @@ nav.nav
         cursor: pointer
         transition: 0.3s
         &:hover
-          transform: rotate(10deg)
+          transform: rotate(5deg)
     input#nav_switch
       display: none
     .nav_hamburger-lines
       display: none
     .menu-items
       display: flex
-      li
+      div.item
         list-style: none
         a.nav_text
           text-decoration: none
@@ -131,7 +131,7 @@ nav.nav
             color: $color_blue
             transform: translate(4px, 4px)
 
-      li ~ li
+      div.item ~ div.item
         margin: 0 0 0 40px
 
     input#nav_switch:checked+.menu-items
@@ -154,7 +154,7 @@ header.header
     .header_top
       height: calc(100% - 300px)
       width: 100%
-      padding: 36px 0 0 0
+      margin-top: 36px
       img.header_top_logo
         height: 100%
         width: 100%
@@ -164,9 +164,6 @@ header.header
       text-align: center
       position: absolute
       bottom: 0
-      left: 50%
-      transform: translateX(-50%)
-      margin-top: 24px
       display: flex
       flex-direction: column
       align-items: center
@@ -190,6 +187,9 @@ header.header
         img
           width: 48px
           cursor: pointer
+          transition: 0.3s
+          &:hover
+            transform: translateY(0.3rem)
 
 // about 和 works 共通設定
 .container
@@ -327,6 +327,12 @@ header.header
         .about_marketing_block.fake_block
           opacity: 0
         //- 區塊
+        a.about_marketing_block
+          text-decoration: none
+          cursor: pointer
+          transition: 0.3s
+          &:hover
+            transform: translate(4px, 4px)
         .about_marketing_block
           width: 23%
           background-color: #fff
@@ -417,10 +423,12 @@ header.header
         margin: 10px 0 0 0
   //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
   .works_block
+    display: flex
+    flex-direction: column
+    margin: 60px 0
     .works_block_title_wrapper
       display: flex
       align-items: center
-      margin: 40px 0 0 0
       .works_block_title_icon
         margin: 0 16px 0 0
         img
@@ -431,11 +439,11 @@ header.header
         font-size: 18px
         margin: 0 0 0 14px
     // MORE 按鈕
-    pre.works_more_button
+    button.works_more_button
       cursor: pointer
-      margin: 32px auto 0 auto
-      padding: 8px 8px
-      font-size: 28px
+      margin: 32px auto
+      padding: 8px 24px
+      font-size: 2.4rem
       text-align: center
       font-weight: 500
       letter-spacing: 4px
@@ -443,14 +451,14 @@ header.header
       background-color: $color_blue
       color: $color_background
       border-radius: 60px
-      width: 160px
       box-shadow:1px 1px 4px 1px rgba($color_blue, 0.25)
       transition-duration: 0.3s
       &:hover
+        transform: scale(1.1)
+      &.is_open
         border: 2px solid $color_black
         background-color: $color_black
         box-shadow:1px 1px 4px 1px rgba($color_black, 0.25)
-        transform: scale(1.1)
     // 各個隱藏高度尺寸
     .label_wrapper
       height: 360px
@@ -572,9 +580,10 @@ header.header
         font-size: 20px
         margin: 24px 0 0 0
         width: 100%
+        -webkit-user-select: text
         user-select: text
       &:hover
-        transform: translate(8px, 8px)
+        transform: translate(4px, 4px)
   //- 底部 logo
   .contact_logo_wrapper
     position: absolute
@@ -656,7 +665,7 @@ header.header
         margin-top: -16px
         margin-left: -32px
 
-        li ~ li
+        div.item ~ div.item
           margin: 0 0 0 0px
         .line
           display: block
@@ -690,9 +699,9 @@ header.header
     .header_content
       width: 100%
       .header_top
-        padding: 36px 20px 0 20px
+        padding: 0 20px 0 20px
       .header_bottom
-        padding: 0 20px
+        padding: 0 20px 36px 20px
         .header_bottom_content
           .header_bottom_title
             font-size: 1.6rem

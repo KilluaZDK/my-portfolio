@@ -12,7 +12,7 @@ export default function moreButton() {
         },
         'slow',
         () => {
-          $button.text('Collapse')
+          $button.text('Collapse').addClass('is_open')
         }
       )
     } else {
@@ -22,7 +22,7 @@ export default function moreButton() {
         },
         'slow',
         () => {
-          $button.text('More')
+          $button.text('More').removeClass('is_open')
         }
       )
       $('html, body').animate(

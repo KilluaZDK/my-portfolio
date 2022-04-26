@@ -1,9 +1,9 @@
 export default function smoothScroll() {
-  $('a.nav_text').on('click', function (event) {
-    if (this.hash !== '') {
-      event.preventDefault()
+  const scrollHandler = (e) => {
+    const hash = e.currentTarget.hash
 
-      const hash = this.hash
+    if (typeof hash === 'string' && hash.length > 0) {
+      e.preventDefault()
 
       $('input#nav_switch').prop('checked', false)
 
@@ -17,5 +17,9 @@ export default function smoothScroll() {
         }
       )
     }
-  })
+  }
+
+  $('a.nav_text').on('click', scrollHandler)
+
+  $('a.about_marketing_block').on('click', scrollHandler)
 }
