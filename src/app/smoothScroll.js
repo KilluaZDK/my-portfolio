@@ -13,7 +13,7 @@ export default function smoothScroll() {
         },
         'slow',
         function () {
-          window.history.replaceState(null, null, `${window.location.origin}/${hash}`)
+          window.history.replaceState(null, null, `${window.location.origin}${window.location.pathname}${hash}`)
         }
       )
     }

@@ -6,7 +6,7 @@ export default function backToTop() {
       },
       800,
       function () {
-        window.history.replaceState(null, null, window.location.origin)
+        window.history.replaceState(null, null, `${window.location.origin}${window.location.pathname}`)
       }
     )
   })

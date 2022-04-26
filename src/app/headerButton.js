@@ -6,7 +6,7 @@ export default function clickToAbout() {
       },
       500,
       function () {
-        window.history.replaceState(null, null, `${window.location.origin}/#about`)
+        window.history.replaceState(null, null, `${window.location.origin}${window.location.pathname}#about`)
       }
     )
   })
