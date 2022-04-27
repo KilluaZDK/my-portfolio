@@ -29,17 +29,6 @@ $height_nav: 72px
   letter-spacing: 8px
   margin: 0
 
-// 三大區塊 margin
-@mixin large_padding
-  padding: 0 60px
-
-@mixin middle_padding
-  padding: 0 40px
-
-@mixin small_padding
-  padding: 0 20px
-
-
 // 粉紅色標題線
 @mixin line
   width: 30px
@@ -198,8 +187,8 @@ header.header
 
 // about 和 works 共通設定
 .container
-  +large_padding
-  margin: 0 0 80px 0
+  width: 70%
+  margin: 80px auto
   .container_title
     +large_top_title
 
@@ -226,9 +215,6 @@ header.header
       .about_top_detail
         display: flex
         align-items: center
-        .about_top_detail_icon
-          margin: 0 28px 0 0
-          font-size: 28px
         .about_top_detail_content
           width: 100%
           .about_top_detail_content_block
@@ -246,8 +232,6 @@ header.header
           width: 100%
           display: flex
           align-items: center
-          .about_top_detail_icon.none
-            opacity: 0
           .about_top_detail_content
             width: 100%
             .about_top_detail_content_block
@@ -277,7 +261,7 @@ header.header
             display: flex
             flex-direction: column
             pre.about_top_detail_content_block_row
-              font-size: 20px
+              font-size: 14px
               margin: 0 0 8px 0
     //- 證書
     .about_top_content.certificate
@@ -326,11 +310,10 @@ header.header
       .about_marketing_container
         width: 100%
         display: flex
-        justify-content: space-between
+        justify-content: flex-start
         flex-wrap: wrap
-        //- 偽區塊
-        .about_marketing_block.fake_block
-          opacity: 0
+        gap: 20px
+        margin-bottom: 60px
         //- 區塊
         a.about_marketing_block
           text-decoration: none
@@ -339,9 +322,8 @@ header.header
           &:hover
             transform: translate(4px, 4px)
         .about_marketing_block
-          width: 23%
+          width: 22%
           background-color: #fff
-          margin: 0 0 40px 0
           border-radius: 16px
           box-shadow:1px 1px 24px 1px rgba(#000000, 0.16)
           .about_marketing_picture
@@ -372,9 +354,7 @@ header.header
             .about_marketing_content_detail
               font-size: 16px
               line-height: 24px
-        // 偽區塊
-        .about_marketing_block.fake_block
-          display: none
+
       //- 其他_標題
       .about_other
         margin: 20px 0 0 0
@@ -443,6 +423,14 @@ header.header
       pre.works_block_title_sort
         font-size: 18px
         margin: 0 0 0 14px
+    // 遮罩
+    .fadeout
+      position: absolute
+      bottom: 100px
+      left: 0
+      width: 100%
+      height: 200px
+      background-image: linear-gradient(to bottom, transparent, #dfe0db)
     // MORE 按鈕
     button.works_more_button
       cursor: pointer
@@ -466,44 +454,30 @@ header.header
         box-shadow:1px 1px 4px 1px rgba($color_black, 0.25)
     // 各個隱藏高度尺寸
     .label_wrapper
-      height: 360px
+      height: 320px
       overflow: hidden
       // transition-duration: 0.5s
       .works_block_content
         .works_block_content_title
           font-size: 20px
-          margin: 52px 0 0 0
+          margin: 52px 0 28px 0
         .works_block_content_image_wrapper
           display: flex
-          justify-content: space-between
-          flex-wrap: wrap
-          img
-            height: 240px
-            border-radius: 16px
-            margin: 32px 0 0 0
-          // 毛天使 偽圖片
-          img.fack_picture.petangel
-            display: none
-          // 瑪莉雅之吻 偽圖片
-          img.maria.fack_picture
-            display: none
-          // 雅莉珊卓 偽圖片
-          img.fack_picture
-            opacity: 0
-        .works_block_content_image_wrapper.typesetting_start
           justify-content: flex-start
+          flex-wrap: wrap
+          gap: 10px
           img
-            margin: 32px 32px 0 0
-        .works_block_content_image_wrapper.typesetting_start.img_small_height
-          img
-            height: 180px
+            height: 220px
+          img.fu
+            height: auto
+            flex: 1
 
 //- podcast
 .podcast.container#podcast
+  width: 100%
   margin-top: 60px
   background-color: rgba(#A3C6FE, 0.3)
-  padding-top: 80px
-  padding-bottom: 80px
+  padding: 80px 60px
   //- 下方圖片資訊
   .podcast_container
     display: flex
@@ -565,12 +539,13 @@ header.header
     display: flex
     justify-content: space-between
     width: 100%
+    gap: 16px
     .contact_block
       display: flex
       flex-direction: column
       align-items: center
       justify-content: center
-      width: 30%
+      flex: 1
       text-align: center
       background-color: $color_white
       padding: 24px 8px
@@ -719,54 +694,29 @@ header.header
             line-height: 20px
 
 // about 和 works 共通設定
+@media screen and (max-width: 1048px)
+  .container
+    width: 80%
+
 @media screen and (max-width: 720px)
   .container
-    +middle_padding
-    margin: 0 0 48px 0
+    padding: 0 40px
+    width: 100%
+    margin: 48px 0
 
 @media screen and (max-width: 570px)
   .container
     .container_title
       +small_top_title
-      margin: 0 0 32px 0
+      margin: 32px 0
 
 @media screen and (max-width: 400px)
   .container
-    +small_padding
+    padding: 0 20px
 
 //- about
 
 //- 教育程度、技能、證書
-@media screen and (max-width: 1200px)
-  .about.container
-    .about_group
-      .about_top_content
-        .about_top_detail
-          .about_top_detail_icon
-            display: none
-      //- 技能
-      .about_top_content.skills
-        .about_top_detail
-          .about_top_detail_content
-            .about_top_detail_content_block
-              pre.about_top_detail_content_block_row
-                font-size: 16px
-
-@media screen and (max-width: 1080px)
-  .about.container
-    .about_group
-      .about_top_content
-        .about_top_detail
-          .about_top_detail_icon
-            display: none
-      //- 技能
-      .about_top_content.skills
-        .about_top_detail
-          .about_top_detail_content
-            .about_top_detail_content_block
-              pre.about_top_detail_content_block_row
-                font-size: 14px
-
 @media screen and (max-width: 950px)
   .about.container
     .about_group
@@ -774,36 +724,16 @@ header.header
       margin: 0
       .about_top_content
         width: 45%
-        .about_top_detail
-          .about_top_detail_icon
-            display: block
       .about_top_content:nth-child(3)
         margin: 52px 0 0 0
       .about_top_content.experience
         margin: 52px 0 0 0
-      //- 技能
-      .about_top_content.skills
-        .about_top_detail
-          .about_top_detail_content
-            .about_top_detail_content_block
-              pre.about_top_detail_content_block_row
-                font-size: 16px
 
 @media screen and (max-width: 790px)
   .about.container
     .about_group
       .about_top_content
         width: 46%
-        .about_top_detail
-          .about_top_detail_icon
-            display: none
-      //- 技能
-      .about_top_content.skills
-        .about_top_detail
-          .about_top_detail_content
-            .about_top_detail_content_block
-              pre.about_top_detail_content_block_row
-                font-size: 14px
 
 @media screen and (max-width: 640px)
   .about.container
@@ -819,19 +749,7 @@ header.header
           .about_top_detail_content
             .about_top_detail_content_block
               pre.about_top_detail_content_block_row
-                font-size: 20px
-
-@media screen and (max-width: 430px)
-  .about.container
-    .about_group
-      //- 技能
-      .about_top_content.skills
-        .about_top_detail
-          .about_top_detail_content
-            .about_top_detail_content_block
-              pre.about_top_detail_content_block_row
-                font-size: 14px
-
+                font-size: 18px
 
 //- 工作經歷
 @media screen and (max-width: 1240px)
@@ -884,18 +802,6 @@ header.header
             .about_marketing_content
               hr
                 margin: 16px 0
-          // 偽區塊
-          .about_marketing_block.fake_block
-            display: block
-
-@media screen and (max-width: 780px)
-  .about.container
-    .about_group
-      .about_top_content.experience
-        .about_marketing_container
-          //- 區塊
-          .about_marketing_block
-            width: 32%
 
 @media screen and (max-width: 720px)
   .about.container
@@ -916,9 +822,6 @@ header.header
                   font-size: 14px
               .about_marketing_content_detail
                 font-size: 14px
-          // 偽區塊
-          .about_marketing_block.fake_block
-            display: none
 
 @media screen and (max-width: 640px)
   .about.container
@@ -991,7 +894,7 @@ header.header
         .about_marketing_container
           //- 區塊
           .about_marketing_block
-            width: 100%
+            flex: 1 100%
             .about_marketing_content
               padding: 16px 8%
               .about_marketing_content_title_wrapper
@@ -1084,162 +987,14 @@ header.header
                 margin: 8px 0 0 0
 
 //- works
-@media screen and (max-width: 1200px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸 - 富盛豐
-        .label_wrapper.brand_fu
-          height: 320px
-        .label_wrapper
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 毛天使 偽圖片
-              img.fack_picture.petangel
-                display: block
-              // 雅莉珊卓 偽圖片
-              img.fack_picture:nth-child(13)
-                display: none
-              img.fack_picture:nth-child(14)
-                display: none
-              // 富盛豐 圖片高度
-              img.fu
-                height: 200px
-
-@media screen and (max-width: 1126px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸
-        .label_wrapper
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 毛天使 偽圖片
-              img.fack_picture.petangel
-                display: block
-              // 雅莉珊卓 偽圖片
-              img.fack_picture:nth-child(11)
-                display: none
-              img.fack_picture:nth-child(12)
-                display: none
-              img.fack_picture:nth-child(13)
-                display: none
-              img.fack_picture:nth-child(14)
-                display: none
-
-@media screen and (max-width: 1062px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸 - 瑪莉雅之吻
-        .label_wrapper.brand_maria
-          height: 300px
-          .works_block_content
-            .works_block_content_image_wrapper
-              img.maria
-                height: 180px
-
-
 @media screen and (max-width: 860px)
   .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
     .works_block
       // MORE 按鈕
       pre.works_more_button
         transform: scale(0.7)
         &:hover
           transform: scale(0.8)
-      // 各個隱藏高度尺寸
-      .label_wrapper
-        height: 300px
-        .works_block_content
-          .works_block_content_image_wrapper
-            img
-              height: 180px
-
-@media screen and (max-width: 826px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸
-        .label_wrapper
-          height: 300px
-        .label_wrapper.brand_maria
-          height: 280px
-          .works_block_content
-            .works_block_content_image_wrapper
-              img
-                height: 150px
-              img.maria
-                height: 150px
-
-@media screen and (max-width: 666px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸
-        .label_wrapper.brand_fu
-          height: 220px
-        .label_wrapper
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 富盛豐 圖片高度
-              img.fu
-                height: 100px
-        .label_wrapper.brand_maria
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 瑪莉雅之吻 偽圖片
-              img.maria.fack_picture:nth-child(21)
-                display: block
-            .works_block_content_image_wrapper.typesetting_start.img_small_height
-              img
-                height: 120px
-                margin: 24px 24px 0 0
-
-@media screen and (max-width: 600px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸
-        .label_wrapper
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 毛天使 偽圖片
-              img.fack_picture.petangel
-                display: none
-
-@media screen and (max-width: 584px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸
-        .label_wrapper
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 雅莉珊卓 偽圖片
-              img.fack_picture
-                display: none
-
-@media screen and (max-width: 520px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸 - 瑪莉雅之吻
-        .label_wrapper.brand_maria
-          height: 240px
-          .works_block_content
-            .works_block_content_image_wrapper
-              img.maria
-                height: 120px
 
 @media screen and (max-width: 480px)
   .works.container
@@ -1254,30 +1009,6 @@ header.header
           font-size: 20px
         pre.works_block_title_sort
           font-size: 16px
-      label
-        // 各個隱藏高度尺寸 - 瑪莉雅之吻
-        .label_wrapper
-          height: 240px
-          .works_block_content
-            .works_block_content_title
-              font-size: 16px
-              margin: 40px 0 0 0
-            .works_block_content_image_wrapper
-              img
-                height: 120px
-
-@media screen and (max-width: 435px)
-  .works.container
-    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
-    .works_block
-      label
-        // 各個隱藏高度尺寸
-        .label_wrapper.brand_maria
-          .works_block_content
-            .works_block_content_image_wrapper
-              // 瑪莉雅之吻 偽圖片
-              img.maria.fack_picture:nth-child(21)
-                display: none
 
 //- podcast
 @media screen and (max-width: 1100px)
@@ -1304,8 +1035,6 @@ header.header
 @media screen and (max-width: 1000px)
   .podcast.container#podcast
     margin-top: 60px
-    padding-top: 80px
-    padding-bottom: 80px
     .podcast_container
       flex-direction: column
       align-items: center
@@ -1350,6 +1079,7 @@ header.header
 
 @media screen and (max-width: 840px)
   .podcast.container#podcast
+    padding: 40px
     .podcast_container
       // 下方資訊內容
       .podcast_right
@@ -1359,6 +1089,7 @@ header.header
 
 @media screen and (max-width: 570px)
   .podcast.container#podcast
+    padding: 20px
     .podcast_container
       // 上方封面圖片
       .podcast_left
@@ -1394,7 +1125,6 @@ header.header
     //- 下方三區塊
     .contact_container
       .contact_block
-        width: 28%
         img
           width: 60px
         pre.contact_block_text
@@ -1415,8 +1145,6 @@ header.header
     //- 下方三區塊
     .contact_container
       flex-wrap: wrap
-      .contact_block ~ .contact_block
-        margin: 28px 0 0 0
       .contact_block
         flex-direction: row
         align-items: center

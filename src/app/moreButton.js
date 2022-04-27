@@ -13,6 +13,7 @@ export default function moreButton() {
         'slow',
         () => {
           $button.text('Collapse').addClass('is_open')
+          $button.next('.fadeout').hide()
         }
       )
     } else {
@@ -23,6 +24,7 @@ export default function moreButton() {
         'slow',
         () => {
           $button.text('More').removeClass('is_open')
+          $button.next('.fadeout').show()
         }
       )
       $('html, body').animate(

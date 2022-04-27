@@ -57,7 +57,6 @@ header.header
         img(src=require("../images/about_title_education.svg") alt="education")
       .about_top_detail
         .about_top_detail_wrapper
-          .about_top_detail_icon ▻
           .about_top_detail_content
             .about_top_detail_content_block
               .about_top_detail_content_block_top
@@ -67,7 +66,6 @@ header.header
               .about_top_detail_content_block_botton
                 p.english SHIH HSIN UNIVERSITY
         .about_top_detail_wrapper
-          .about_top_detail_icon.none ▻
           .about_top_detail_content
             .about_top_detail_content_block
               .about_top_detail_content_block_top
@@ -110,7 +108,6 @@ header.header
         img(src=require("../images/about_title_certificate.svg") alt="certificate")
       .about_top_detail
         .about_top_detail_wrapper
-          .about_top_detail_icon ▻
           .about_top_detail_content
             .about_top_detail_content_block
               .about_top_detail_content_block_top
@@ -223,16 +220,7 @@ header.header
               pre.sort 洗淨系列品牌
             hr
             .about_marketing_content_detail 官網 Banner 設計
-        //- 第九區塊 偽區塊
-        .about_marketing_block.fake_block
-          .about_marketing_picture
-            //- img(src=require("../images/about_cover_1.png"))
-          .about_marketing_content
-            .about_marketing_content_title_wrapper
-              p.name 偽區塊
-              pre.sort 偽品牌
-            hr
-            .about_marketing_content_detail 偽設計
+
       //- 其他_標題
       .about_other
         .about_other_block
@@ -321,10 +309,7 @@ header.header
           img(src=require("../images/petangel_product_19.png") alt="product")
           img(src=require("../images/petangel_product_20.png") alt="product")
           img(src=require("../images/petangel_product_21.png") alt="product")
-          //- 偽圖片
-          img.fack_picture.petangel(src=require("../images/petangel_product_21.png") alt="product")
-          img.fack_picture.petangel(src=require("../images/petangel_product_21.png") alt="product")
-          img.fack_picture.petangel(src=require("../images/petangel_product_21.png") alt="product")
+
       .works_block_content
         .works_block_content_title 型錄設計
         .works_block_content_image_wrapper
@@ -338,6 +323,7 @@ header.header
           img(src=require("../images/petangel_card.png") alt="product")
           img(src=require("../images/petangel_logo.png") alt="product")
     button.works_more_button(type="button") More
+    .fadeout
   //- 欣湛
   .works_block#cleaner
     .works_block_title_wrapper
@@ -363,6 +349,7 @@ header.header
           img(src=require("../images/cleaner_9.png") alt="product")
           img(src=require("../images/cleaner_10.png") alt="product")
     button.works_more_button(type="button") More
+    .fadeout
   //- 瑪莉雅之吻
   .works_block#maria
     .works_block_title_wrapper
@@ -394,9 +381,8 @@ header.header
           img.maria(src=require("../images/maria_18.png") alt="product")
           img.maria(src=require("../images/maria_19.png") alt="product")
           img.maria(src=require("../images/maria_20.png") alt="product")
-          //- 偽圖片
-          img.maria.fack_picture(src=require("../images/maria_20.png") alt="product")
     button.works_more_button(type="button") More
+    .fadeout
   //- 雅莉珊卓
   .works_block#alexandra
     .works_block_title_wrapper
@@ -417,13 +403,8 @@ header.header
           img(src=require("../images/alexandra_7.png") alt="product")
           img(src=require("../images/alexandra_8.png") alt="product")
           img(src=require("../images/alexandra_9.png") alt="product")
-          //- 偽圖片
-          img.fack_picture(src=require("../images/alexandra_9.png") alt="product")
-          img.fack_picture(src=require("../images/alexandra_9.png") alt="product")
-          img.fack_picture(src=require("../images/alexandra_9.png") alt="product")
-          img.fack_picture(src=require("../images/alexandra_9.png") alt="product")
-          img.fack_picture(src=require("../images/alexandra_9.png") alt="product")
     button.works_more_button(type="button") More
+    .fadeout
   //- 富盛豐
   .works_block#fu
     .works_block_title_wrapper
@@ -440,6 +421,7 @@ header.header
           img.fu(src=require("../images/fu_3.png") alt="product")
           img.fu(src=require("../images/fu_4.png") alt="product")
     button.works_more_button(type="button") More
+    .fadeout
 //- podcast
 .podcast.container#podcast
   .container_title Podcast
