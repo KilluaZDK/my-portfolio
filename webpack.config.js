@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = (env) => {
   return {
@@ -49,7 +50,7 @@ module.exports = (env) => {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset',
           generator: {
-            filename: 'images/[hash][ext][query]',
+            filename: 'images/[name][ext]',
           },
         },
         {
@@ -63,8 +64,11 @@ module.exports = (env) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'killuaZDK',
+        title: 'My Portfolio - CHUNG NI-YIN',
         template: './index.html',
+      }),
+      new CopyPlugin({
+        patterns: [{ from: 'public', to: 'public' }],
       }),
     ],
   }
