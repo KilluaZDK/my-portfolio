@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = (env) => {
   return {
@@ -14,7 +15,7 @@ module.exports = (env) => {
       filename: '[name].[contenthash:6].bundle.js',
       path: path.resolve(__dirname, 'dist'),
       clean: true,
-      assetModuleFilename: 'assets/[hash][ext][query]',
+      assetModuleFilename: 'assets/[name][ext]',
     },
     devtool: env.production ? 'source-map' : 'inline-source-map',
     resolveLoader: {
@@ -31,17 +32,29 @@ module.exports = (env) => {
             method: 'render',
           },
         },
+        // {
+        //   test: /\.js$/,
+        //   include: path.resolve(__dirname, 'src'),
+        //   loader: 'babel-loader',
+        // },
         {
-          test: /\.css$/i,
-          use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.s[ac]ss$/i,
+          test: /\.(s[ac]ss|css)$/i,
           use: [
             // Creates `style` nodes from JS strings
             'style-loader',
             // Translates CSS into CommonJS
-            'css-loader',
+            {
+              loader: 'css-loader',
+              options: { importLoaders: 1 },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                postcssOptions: {
+                  plugins: [postcssPresetEnv({ browsers: 'last 2 versions' })],
+                },
+              },
+            },
             // Compiles Sass to CSS
             'sass-loader',
           ],
