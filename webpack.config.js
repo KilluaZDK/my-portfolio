@@ -32,11 +32,16 @@ module.exports = (env) => {
             method: 'render',
           },
         },
-        // {
-        //   test: /\.js$/,
-        //   include: path.resolve(__dirname, 'src'),
-        //   loader: 'babel-loader',
-        // },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: [['@babel/preset-env', { targets: 'defaults' }]],
+            },
+          },
+        },
         {
           test: /\.(s[ac]ss|css)$/i,
           use: [
