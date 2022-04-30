@@ -5,6 +5,6 @@ import './main.sass'
 // Hot Module Replacement
 hmr()
 
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
   app()
 })

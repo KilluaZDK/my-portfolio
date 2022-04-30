@@ -1,6 +1,5 @@
 export default function moreButton() {
-  $('.works_more_button').on('click', function () {
-    const $button = $(this)
+  const handleWorks = ($button) => {
     const $wrapper = $button.prev('.label_wrapper')
     const originalHeight = $wrapper.data('originalHeight') || $wrapper.data('originalHeight', $wrapper.height())
     const autoHeight = $wrapper.prop('scrollHeight')
@@ -13,7 +12,7 @@ export default function moreButton() {
         'slow',
         () => {
           $button.text('Collapse').addClass('is_open')
-          $button.next('.fadeout').hide()
+          $button.next('.works_cover').addClass('hidden')
         }
       )
     } else {
@@ -24,7 +23,7 @@ export default function moreButton() {
         'slow',
         () => {
           $button.text('More').removeClass('is_open')
-          $button.next('.fadeout').show()
+          $button.next('.works_cover').removeClass('hidden')
         }
       )
       $('html, body').animate(
@@ -34,5 +33,15 @@ export default function moreButton() {
         'slow'
       )
     }
+  }
+
+  $('.works_more_button').on('click', function () {
+    const $button = $(this)
+    handleWorks($button)
+  })
+
+  $('.works_block .works_cover').on('click', function () {
+    const $button = $(this).prev('.works_more_button')
+    handleWorks($button)
   })
 }
