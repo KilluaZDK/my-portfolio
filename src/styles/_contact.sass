@@ -1,0 +1,131 @@
+@use 'base'
+
+.contact.container
+  //- 下方三區塊
+  .contact_container
+    display: flex
+    justify-content: space-between
+    width: 100%
+    gap: 16px
+    .contact_block
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      flex: 1
+      text-align: center
+      background-color: base.$color_white
+      padding: 24px 8px
+      border-radius: 24px
+      box-shadow:1px 1px 24px 1px rgba(#000000, 0.16)
+      cursor: pointer
+      transition: 0.3s
+      text-decoration: none
+      img
+        width: 120px
+        height: auto
+      pre.contact_block_text
+        font-size: 20px
+        margin: 24px 0 0 0
+        width: 100%
+        user-select: text
+      &:hover
+        transform: translate(4px, 4px)
+  //- 底部 logo
+  .contact_logo_wrapper
+    display: flex
+    img.contact_logo
+      width: 50%
+      height: auto
+      margin: 160px auto
+
+// RWD
+@media screen and (max-width: 1170px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      .contact_block
+        img
+          width: 80px
+          height: auto
+        pre.contact_block_text
+          font-size: 16px
+
+@media screen and (max-width: 950px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      .contact_block
+        img
+          width: 60px
+          height: auto
+        pre.contact_block_text
+          font-size: 14px
+
+@media screen and (max-width: 850px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      .contact_block
+        img
+          width: 48px
+          height: auto
+        pre.contact_block_text
+          font-size: 12px
+
+@media screen and (max-width: 780px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      flex-wrap: wrap
+      .contact_block
+        flex-direction: row
+        align-items: center
+        width: 600px
+        img
+          width: 48px
+          height: auto
+          margin: 0 0 0 16px
+        pre.contact_block_text
+          font-size: 20px
+          margin: 0
+
+@media screen and (max-width: 570px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      .contact_block
+        margin: 28px 0 0 0
+        border-radius: 48px
+
+@media screen and (max-width: 480px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      .contact_block ~ .contact_block
+        margin: 20px 0 0 0
+      .contact_block
+        img
+          width: 32px
+          height: auto
+          margin: 0 0 0 12px
+        pre.contact_block_text
+          font-size: 16px
+
+@media screen and (max-width: 414px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      .contact_block
+        padding: 8px 4px
+        img
+          width: 28px
+          height: auto
+          margin: 0 0 0 12px
+        pre.contact_block_text
+          font-size: 12px
+    //- 底部 logo
+    .contact_logo_wrapper
+      img.contact_logo
+        width: 100%
+        margin: 80px auto

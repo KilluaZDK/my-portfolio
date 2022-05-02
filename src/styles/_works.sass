@@ -1,0 +1,116 @@
+@use 'base'
+
+.works.container
+  //- works 上方標題文字及圖片
+  .works_title_block
+    .works_title_wrapper
+      display: flex
+      align-items: center
+      .works_title_line
+        hr
+          @include base.line
+      .works_title_text
+        @include base.large_title
+    .works_title_image
+      img
+        width: 100%
+        height: auto
+        margin: 10px 0 0 0
+  //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
+  .works_block
+    display: flex
+    flex-direction: column
+    margin: 60px 0
+    .works_block_title_wrapper
+      display: flex
+      align-items: center
+      .works_block_title_icon
+        margin: 0 16px 0 0
+        img
+          width: 36px
+          height: auto
+      .works_block_title_name
+        font-size: 24px
+      pre.works_block_title_sort
+        font-size: 18px
+        margin: 0 0 0 14px
+    // 遮罩
+    .works_cover
+      position: absolute
+      bottom: 100px
+      left: 0
+      width: 100%
+      height: 100px
+      opacity: 1
+      background-image: linear-gradient(to bottom, transparent, #dfe0db)
+      cursor: pointer
+      transition: 0.3s ease-in-out
+      &.hidden
+        opacity: 0
+        height: 0
+    // MORE 按鈕
+    button.works_more_button
+      cursor: pointer
+      margin: 32px auto
+      padding: 8px 24px
+      font-size: 2.4rem
+      text-align: center
+      font-weight: 500
+      letter-spacing: 4px
+      border: 2px solid base.$color_blue
+      background-color: base.$color_blue
+      color: base.$color_background
+      border-radius: 60px
+      box-shadow:1px 1px 4px 1px rgba(base.$color_blue, 0.25)
+      transition: transform 0.3s, background 0.3s ease-in-out, border 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+      &:hover
+        transform: scale(1.1)
+      &.is_open
+        border: 2px solid base.$color_black
+        background-color: base.$color_black
+        box-shadow:1px 1px 4px 1px rgba(base.$color_black, 0.25)
+    // 各個隱藏高度尺寸
+    .label_wrapper
+      height: 320px
+      overflow: hidden
+      // transition-duration: 0.5s
+      .works_block_content
+        .works_block_content_title
+          font-size: 20px
+          margin: 52px 0 28px 0
+        .works_block_content_image_wrapper
+          display: flex
+          justify-content: flex-start
+          flex-wrap: wrap
+          gap: 10px
+          img
+            height: 220px
+            width: auto
+          img.fu
+            height: auto
+            flex: 1
+
+// RWD
+@media screen and (max-width: 768px)
+  .works.container
+    .works_block
+      // MORE 按鈕
+      pre.works_more_button
+        transform: scale(0.7)
+        &:hover
+          transform: scale(0.8)
+
+@media screen and (max-width: 414px)
+  .works.container
+    //- 毛天使、欣湛、瑪莉雅之吻、雅莉珊卓、富盛豐共同設定
+    .works_block
+      .works_block_title_wrapper
+        .works_block_title_icon
+          margin: 0 12px 0 0
+          img
+            width: 28px
+            height: auto
+        .works_block_title_name
+          font-size: 20px
+        pre.works_block_title_sort
+          font-size: 16px

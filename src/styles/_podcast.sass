@@ -1,0 +1,170 @@
+@use 'base'
+
+.podcast.container#podcast
+  width: 100%
+  margin-top: 60px
+  background-color: rgba(#A3C6FE, 0.3)
+  padding: 80px 60px
+  //- 下方圖片資訊
+  .podcast_container
+    display: flex
+    width: 100%
+    .podcast_left
+      img.podcast_cover
+        width: 400px
+        height: auto
+        border-radius: 40px
+        box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 35px
+    .podcast_right
+      margin: 0 0 0 60px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .podcast_info
+        img.podcast_logo_title
+          width: 540px
+          height: auto
+        .podcast_text
+          color: base.$color_black
+          margin: 16px 0 0 0
+          font-size: 24px
+          line-height: 40px
+      .podcast_bottom
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        a.podcast_link_button
+          text-decoration: none
+          transition: 0.5s
+          background-color: base.$color_black
+          border-radius: 12px
+          width: 280px
+          height: 56px
+          .podcast_link_button_content
+            display: flex
+            align-items: center
+            @include base.center
+            img.podcast_link_tri
+              width: 16px
+              height: auto
+              margin: 0 8px 0 0
+            .podcast_link_text
+              font-size: 20px
+              color: base.$color_white
+          &:hover
+            background-color: #A3C6FE
+            transform: translate(0, -4px)
+        a.podcast_link_mic
+          img.podcast_mic
+            width: 60px
+            height: auto
+            transition: 0.5s
+            &:hover
+              transform: rotate(10deg)
+
+// RWD
+@media screen and (max-width: 1100px)
+  .podcast.container#podcast
+    //- 下方圖片資訊
+    .podcast_container
+      .podcast_left
+        img.podcast_cover
+          width: 320px
+          height: auto
+      .podcast_right
+        margin: 0 0 0 60px
+        .podcast_info
+          img.podcast_logo_title
+            width: 360px
+            height: auto
+        .podcast_bottom
+          a.podcast_link_button
+            border-radius: 12px
+            width: 280px
+            height: 44px
+          a.podcast_link_mic
+            img.podcast_mic
+              width: 40px
+              height: auto
+
+@media screen and (max-width: 1000px)
+  .podcast.container#podcast
+    margin-top: 60px
+    .podcast_container
+      flex-direction: column
+      align-items: center
+      // 上方封面圖片
+      .podcast_left
+        img.podcast_cover
+          width: 280px
+          height: auto
+      // 下方資訊內容
+      .podcast_right
+        margin: 0
+        align-items: center
+        .podcast_info
+          display: flex
+          flex-direction: column
+          align-items: center
+          img.podcast_logo_title
+            width: 280px
+            height: auto
+            margin: 60px 0 24px 0
+          .podcast_text
+            margin: 0
+            width: 640px
+            font-size: 20px
+            line-height: 32px
+        .podcast_bottom
+          display: flex
+          flex-direction: column
+          align-items: center
+          a.podcast_link_button
+            border-radius: 12px
+            width: 280px
+            height: 44px
+            margin: 32px 0
+            .podcast_link_button_content
+              img.podcast_link_tri
+                width: 16px
+                height: auto
+                margin: 0 8px 0 0
+              .podcast_link_text
+                font-size: 16px
+          a.podcast_link_mic
+            img.podcast_mic
+              width: 40px
+              height: auto
+
+@media screen and (max-width: 840px)
+  .podcast.container#podcast
+    padding: 40px
+    .podcast_container
+      // 下方資訊內容
+      .podcast_right
+        .podcast_info
+          .podcast_text
+            width: 100%
+
+@media screen and (max-width: 570px)
+  .podcast.container#podcast
+    padding: 20px
+    .podcast_container
+      // 上方封面圖片
+      .podcast_left
+        img.podcast_cover
+          margin: 60px 0 0 0
+          width: 240px
+          height: auto
+      // 下方資訊內容
+      .podcast_right
+        .podcast_info
+          img.podcast_logo_title
+            width: 240px
+            height: auto
+          .podcast_text
+            font-size: 16px
+            line-height: 28px
+        .podcast_bottom
+          a.podcast_link_button
+            width: 240px
