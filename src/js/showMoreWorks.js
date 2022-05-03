@@ -1,4 +1,4 @@
-export default function moreButton() {
+export default function showMoreWorks() {
   const handleWorks = ($button) => {
     const $wrapper = $button.prev('.label_wrapper')
     const originalHeight = $wrapper.data('originalHeight') || $wrapper.data('originalHeight', $wrapper.height())

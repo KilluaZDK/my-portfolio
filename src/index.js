@@ -1,10 +1,14 @@
-import { app } from './app'
+import { backToTop, clickToAbout, lazyLoading, showMoreWorks, smoothScroll } from './js'
 import { hmr } from './utils/hmr'
-import './main.sass'
+import './styles/main.sass'
 
 // Hot Module Replacement
 hmr()
 
 window.addEventListener('DOMContentLoaded', function () {
-  app()
+  lazyLoading()
+  smoothScroll()
+  clickToAbout()
+  backToTop()
+  showMoreWorks()
 })

@@ -21,9 +21,9 @@ module.exports = {
       {
         test: /\.pug$/,
         loader: 'pug-loader',
-        options: {
-          method: 'render',
-        },
+        // options: {
+        //   method: 'render',
+        // },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -44,7 +44,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'My Portfolio - CHUNG NI-YIN',
-      template: './index.html',
+      template: './templates/index.pug',
     }),
     new CopyPlugin({
       patterns: [

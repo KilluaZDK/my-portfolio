@@ -1,0 +1,5 @@
+export { default as smoothScroll } from './smoothScroll'
+export { default as clickToAbout } from './clickToAbout'
+export { default as backToTop } from './backToTop'
+export { default as showMoreWorks } from './showMoreWorks'
+export { default as lazyLoading } from './lazyLoading'
