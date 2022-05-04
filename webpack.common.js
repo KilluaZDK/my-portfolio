@@ -21,9 +21,6 @@ module.exports = {
       {
         test: /\.pug$/,
         loader: 'pug-loader',
-        // options: {
-        //   method: 'render',
-        // },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

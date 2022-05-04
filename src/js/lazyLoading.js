@@ -17,8 +17,12 @@ export default function lazyLoading() {
     })
   }
 
+  const options = {
+    rootMargin: '1000px',
+  }
+
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(onEnterView)
+    const observer = new IntersectionObserver(onEnterView, options)
     lazyImages.forEach((img) => {
       observer.observe(img)
     })
