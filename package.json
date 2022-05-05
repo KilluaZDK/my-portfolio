@@ -36,6 +36,7 @@
     "pug": "^3.0.2",
     "sass": "^1.42.1",
     "sqip": "^1.0.0-alpha.37",
+    "sqip-plugin-blur": "^1.0.0-alpha.38",
     "sqip-plugin-data-uri": "^1.0.0-alpha.38",
     "sqip-plugin-primitive": "^1.0.0-alpha.39",
     "sqip-plugin-svgo": "^1.0.0-alpha.39",

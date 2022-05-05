@@ -1,190 +1,190 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="496.072" height="186.027" viewBox="0 0 496.072 186.027">
+<svg xmlns="http://www.w3.org/2000/svg" width="496" height="186" viewBox="0 0 496 186">
   <g id="about_title_education" transform="translate(-143.602 -1519.184)">
-    <path id="Path_443" data-name="Path 443" d="M0,0H496.072V186.027H0Z" transform="translate(143.602 1519.184)" fill="#fffdf7"/>
-    <g id="Group_286" data-name="Group 286" opacity="0.604">
-      <circle id="Ellipse_221" data-name="Ellipse 221" cx="13" cy="13" r="13" transform="translate(381 1576)" fill="#3cb7c5"/>
-      <rect id="Rectangle_253" data-name="Rectangle 253" width="12" height="12" transform="translate(188 1631)" fill="#3cb7c5"/>
-      <rect id="Rectangle_256" data-name="Rectangle 256" width="12" height="12" transform="translate(592 1631)" fill="#3cb7c5"/>
-      <rect id="Rectangle_254" data-name="Rectangle 254" width="12" height="12" transform="translate(188 1652)" fill="#3cb7c5"/>
-      <rect id="Rectangle_257" data-name="Rectangle 257" width="12" height="12" transform="translate(592 1652)" fill="#3cb7c5"/>
-      <rect id="Rectangle_255" data-name="Rectangle 255" width="12" height="12" transform="translate(188 1673)" fill="#3cb7c5"/>
-      <rect id="Rectangle_258" data-name="Rectangle 258" width="12" height="12" transform="translate(592 1673)" fill="#3cb7c5"/>
-      <rect id="Rectangle_289" data-name="Rectangle 289" width="22" height="16" transform="translate(396 1530)" fill="#3cb7c5"/>
-      <rect id="Rectangle_291" data-name="Rectangle 291" width="83" height="54" transform="translate(225 1631)" fill="#3cb7c5"/>
-      <rect id="Rectangle_292" data-name="Rectangle 292" width="83" height="54" transform="translate(476 1631)" fill="#3cb7c5"/>
+    <path id="Path_443" data-name="Path 443" d="M0,0H496V186H0Z" transform="translate(143.602 1519.184)" fill="#fffdf7"/>
+    <g id="Group_286" data-name="Group 286" transform="translate(188 1530)" opacity="0.604">
+      <circle id="Ellipse_221" data-name="Ellipse 221" cx="13" cy="13" r="13" transform="translate(192.964 45.99)" fill="#3cb7c5"/>
+      <rect id="Rectangle_253" data-name="Rectangle 253" width="12" height="12" transform="translate(0 100.981)" fill="#3cb7c5"/>
+      <rect id="Rectangle_256" data-name="Rectangle 256" width="12" height="12" transform="translate(403.928 100.981)" fill="#3cb7c5"/>
+      <rect id="Rectangle_254" data-name="Rectangle 254" width="12" height="12" transform="translate(0 121.973)" fill="#3cb7c5"/>
+      <rect id="Rectangle_257" data-name="Rectangle 257" width="12" height="12" transform="translate(403.928 121.973)" fill="#3cb7c5"/>
+      <rect id="Rectangle_255" data-name="Rectangle 255" width="12" height="12" transform="translate(0 142.973)" fill="#3cb7c5"/>
+      <rect id="Rectangle_258" data-name="Rectangle 258" width="12" height="12" transform="translate(403.928 142.973)" fill="#3cb7c5"/>
+      <rect id="Rectangle_289" data-name="Rectangle 289" width="22" height="16" transform="translate(207.962)" fill="#3cb7c5"/>
+      <rect id="Rectangle_291" data-name="Rectangle 291" width="83" height="54" transform="translate(37 100.973)" fill="#3cb7c5"/>
+      <rect id="Rectangle_292" data-name="Rectangle 292" width="83" height="54" transform="translate(287.928 100.973)" fill="#3cb7c5"/>
     </g>
     <g id="Group_287" data-name="Group 287" transform="translate(159.019 1525.85)">
-      <path id="Path_231" data-name="Path 231" d="M9466.668,2353.063V2346.3l23.18-21.242,17.021,16.839h123l33.036-27.481h58.35l33.979,27.481h120.83l18.449-16.839,21.353,21.242v6.759" transform="translate(-9459.754 -2287.959)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_232" data-name="Path 232" d="M10002.69,2366.115h51.65v14.07h4.082v8.082h-60v-8.082h4.271Z" transform="translate(-9594.011 -2301.011)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_233" data-name="Path 233" d="M10002.69,2366.115h51.65v14.07h4.082v8.082h-60v-8.082h4.271Z" transform="translate(-9998.42 -2301.011)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_234" data-name="Path 234" d="M9537.688,2385.168h344.767" transform="translate(-9477.687 -2305.822)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
-      <path id="Path_235" data-name="Path 235" d="M9708.634,2371.882v-17.4l35.155-21.939h17.987l35.035,21.939v17.4" transform="translate(-9520.846 -2292.536)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(217.214 45.582)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path id="Path_231" data-name="Path 231" d="M9466.668,2353.063V2346.3l23.176-21.242,17.019,16.839h122.984l33.031-27.481h58.34l33.975,27.481H9876l18.446-16.839L9915.8,2346.3v6.759" transform="translate(-9459.754 -2287.959)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_232" data-name="Path 232" d="M10002.69,2366.115h51.65v14.07h4.082v8.082h-60v-8.082h4.271Z" transform="translate(-9594.082 -2301.023)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_233" data-name="Path 233" d="M10002.69,2366.115h51.65v14.07h4.082v8.082h-60v-8.082h4.271Z" transform="translate(-9998.42 -2301.023)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_234" data-name="Path 234" d="M9537.688,2385.168h344.694" transform="translate(-9477.687 -2305.834)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_235" data-name="Path 235" d="M9708.634,2371.882v-17.4l35.155-21.939h17.987l35.035,21.939v17.4" transform="translate(-9520.882 -2292.544)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(217.178 45.574)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <circle cx="14.203" cy="14.203" r="14.203" stroke="none"/>
         <circle cx="14.203" cy="14.203" r="13.203" fill="none"/>
       </g>
-      <path id="Path_236" data-name="Path 236" d="M9768.295,2305.482v-26.459h21.49v15.3h-21.49" transform="translate(-9535.91 -2279.023)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_237" data-name="Path 237" d="M9669.729,2379.386v-17.119H9698.5" transform="translate(-9511.023 -2300.04)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_238" data-name="Path 238" d="M9826.6,2362.182h30.01V2379.2" transform="translate(-9550.63 -2300.019)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_239" data-name="Path 239" d="M9466.669,2395.748v90.729" transform="translate(-9459.755 -2308.493)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
-      <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(23.606 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path id="Path_236" data-name="Path 236" d="M9768.295,2305.482v-26.459h21.49v15.3h-21.49" transform="translate(-9535.948 -2279.023)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_237" data-name="Path 237" d="M9669.729,2379.386v-17.119H9698.5" transform="translate(-9511.05 -2300.051)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_238" data-name="Path 238" d="M9826.6,2362.182h30.01V2379.2" transform="translate(-9550.676 -2300.03)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_239" data-name="Path 239" d="M9466.669,2395.748v90.729" transform="translate(-9459.755 -2308.521)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
+      <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(23.606 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_124" data-name="Rectangle 124" transform="translate(428.014 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_124" data-name="Rectangle 124" transform="translate(427.942 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_92" data-name="Rectangle 92" transform="translate(58.739 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_92" data-name="Rectangle 92" transform="translate(58.739 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_107" data-name="Rectangle 107" transform="translate(310.653 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_107" data-name="Rectangle 107" transform="translate(310.604 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(78.922 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(78.922 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_108" data-name="Rectangle 108" transform="translate(330.837 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_108" data-name="Rectangle 108" transform="translate(330.784 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_98" data-name="Rectangle 98" transform="translate(99.105 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_98" data-name="Rectangle 98" transform="translate(99.09 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_109" data-name="Rectangle 109" transform="translate(351.02 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_109" data-name="Rectangle 109" transform="translate(350.964 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_101" data-name="Rectangle 101" transform="translate(119.288 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_101" data-name="Rectangle 101" transform="translate(119.27 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_110" data-name="Rectangle 110" transform="translate(371.203 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_110" data-name="Rectangle 110" transform="translate(371.143 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_104" data-name="Rectangle 104" transform="translate(139.472 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_104" data-name="Rectangle 104" transform="translate(139.449 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_111" data-name="Rectangle 111" transform="translate(391.386 100.151)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_111" data-name="Rectangle 111" transform="translate(391.314 100.134)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_90" data-name="Rectangle 90" transform="translate(23.606 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_90" data-name="Rectangle 90" transform="translate(23.606 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_123" data-name="Rectangle 123" transform="translate(428.014 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_123" data-name="Rectangle 123" transform="translate(427.942 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_93" data-name="Rectangle 93" transform="translate(58.739 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_93" data-name="Rectangle 93" transform="translate(58.739 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_116" data-name="Rectangle 116" transform="translate(310.653 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_116" data-name="Rectangle 116" transform="translate(310.604 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_96" data-name="Rectangle 96" transform="translate(78.922 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_96" data-name="Rectangle 96" transform="translate(78.922 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_115" data-name="Rectangle 115" transform="translate(330.837 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_115" data-name="Rectangle 115" transform="translate(330.784 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(99.105 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(99.09 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_114" data-name="Rectangle 114" transform="translate(351.02 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_114" data-name="Rectangle 114" transform="translate(350.964 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_102" data-name="Rectangle 102" transform="translate(119.288 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_102" data-name="Rectangle 102" transform="translate(119.27 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_113" data-name="Rectangle 113" transform="translate(371.203 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_113" data-name="Rectangle 113" transform="translate(371.143 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_105" data-name="Rectangle 105" transform="translate(139.472 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_105" data-name="Rectangle 105" transform="translate(139.449 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_112" data-name="Rectangle 112" transform="translate(391.386 121.081)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_112" data-name="Rectangle 112" transform="translate(391.314 121.061)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(23.606 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(23.606 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_122" data-name="Rectangle 122" transform="translate(428.014 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_122" data-name="Rectangle 122" transform="translate(427.942 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_94" data-name="Rectangle 94" transform="translate(58.739 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_94" data-name="Rectangle 94" transform="translate(58.739 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_117" data-name="Rectangle 117" transform="translate(310.653 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_117" data-name="Rectangle 117" transform="translate(310.604 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_97" data-name="Rectangle 97" transform="translate(78.922 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_97" data-name="Rectangle 97" transform="translate(78.922 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_118" data-name="Rectangle 118" transform="translate(330.837 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_118" data-name="Rectangle 118" transform="translate(330.784 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_100" data-name="Rectangle 100" transform="translate(99.105 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_100" data-name="Rectangle 100" transform="translate(99.09 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_119" data-name="Rectangle 119" transform="translate(351.02 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_119" data-name="Rectangle 119" transform="translate(350.964 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_103" data-name="Rectangle 103" transform="translate(119.288 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_103" data-name="Rectangle 103" transform="translate(119.27 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_120" data-name="Rectangle 120" transform="translate(371.203 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_120" data-name="Rectangle 120" transform="translate(371.143 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_106" data-name="Rectangle 106" transform="translate(139.472 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_106" data-name="Rectangle 106" transform="translate(139.449 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <g id="Rectangle_121" data-name="Rectangle 121" transform="translate(391.386 142.012)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <g id="Rectangle_121" data-name="Rectangle 121" transform="translate(391.314 141.985)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <rect width="13.455" height="13.455" stroke="none"/>
         <rect x="1" y="1" width="11.455" height="11.455" fill="none"/>
       </g>
-      <path id="Path_240" data-name="Path 240" d="M9528.346,2487.456v-81.979h105.7v81.979" transform="translate(-9475.343 -2309.472)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_241" data-name="Path 241" d="M9528.346,2489.1v-83.619h105.669V2489.1" transform="translate(-9222.369 -2310.949)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_242" data-name="Path 242" d="M9758.877,2502.219V2468.6s1.606-5.807,6.672-5.867,7.169,5.867,7.169,5.867v33.615" transform="translate(-9533.531 -2323.95)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_243" data-name="Path 243" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9533.532 -2310.938)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_244" data-name="Path 244" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9505.126 -2310.938)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_246" data-name="Path 246" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9561.938 -2310.938)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_247" data-name="Path 247" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9590.344 -2310.938)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_245" data-name="Path 245" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9476.722 -2310.938)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_248" data-name="Path 248" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9514.342 -2323.223)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_249" data-name="Path 249" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9485.937 -2323.223)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_250" data-name="Path 250" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9428.929 -2323.223)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_251" data-name="Path 251" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9400.524 -2323.223)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Path_252" data-name="Path 252" d="M9766.217,2347.668v9.852" transform="translate(-9535.387 -2296.354)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
-      <path id="Path_253" data-name="Path 253" d="M10114.169,2690.726v90.891" transform="translate(-9658.055 -2603.471)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_240" data-name="Path 240" d="M9528.346,2487.456v-81.979h105.7v81.979" transform="translate(-9475.343 -2309.499)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_241" data-name="Path 241" d="M9528.346,2489.1v-83.619h105.669V2489.1" transform="translate(-9222.441 -2310.977)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_242" data-name="Path 242" d="M9758.877,2502.219V2468.6s1.606-5.807,6.672-5.867,7.169,5.867,7.169,5.867v33.615" transform="translate(-9533.567 -2323.977)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_243" data-name="Path 243" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9533.568 -2310.956)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_244" data-name="Path 244" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9505.166 -2310.956)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_246" data-name="Path 246" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9561.97 -2310.956)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_247" data-name="Path 247" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9590.37 -2310.956)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_245" data-name="Path 245" d="M9758.877,2444.295v-32.577s-.188-6.225,7.045-6.29,6.625,6.29,6.625,6.29v32.577Z" transform="translate(-9476.767 -2310.956)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_248" data-name="Path 248" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9514.368 -2323.25)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_249" data-name="Path 249" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9485.968 -2323.25)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_250" data-name="Path 250" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9428.969 -2323.25)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_251" data-name="Path 251" d="M9682.875,2478.492v-10.537a6.239,6.239,0,0,1,6.523-5.946c6.3-.067,7.123,4.753,7.123,4.753v11.73Z" transform="translate(-9400.569 -2323.25)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_252" data-name="Path 252" d="M9766.217,2347.668v9.852" transform="translate(-9535.423 -2296.363)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_253" data-name="Path 253" d="M10114.169,2690.726v90.891" transform="translate(-9658.127 -2603.498)" fill="none" stroke="#4f5052" stroke-linecap="round" stroke-width="2"/>
     </g>
   </g>
 </svg>
