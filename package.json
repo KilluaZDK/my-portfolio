@@ -5,7 +5,8 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "sqip": "node ./utils/sqip.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -34,6 +35,10 @@
     "postcss-preset-env": "^7.4.4",
     "pug": "^3.0.2",
     "sass": "^1.42.1",
+    "sqip": "^1.0.0-alpha.37",
+    "sqip-plugin-data-uri": "^1.0.0-alpha.38",
+    "sqip-plugin-primitive": "^1.0.0-alpha.39",
+    "sqip-plugin-svgo": "^1.0.0-alpha.39",
     "webpack-dev-server": "^4.2.1",
     "webpack-merge": "^5.8.0"
   }
