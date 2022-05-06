@@ -26,9 +26,9 @@ export default function showMoreWorks() {
           $button.next('.works_cover').removeClass('hidden')
         }
       )
-      $('html, body').animate(
+      $('#root').animate(
         {
-          scrollTop: $button.prev().prev('.works_block_title_wrapper').offset().top - 80,
+          scrollTop: $('#root').scrollTop() + $button.prev().prev('.works_block_title_wrapper').offset().top - 80,
         },
         'slow'
       )

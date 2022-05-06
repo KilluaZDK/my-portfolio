@@ -1,8 +1,8 @@
 export default function clickToAbout() {
   $('.header_bottom_button').on('click', function () {
-    $('html, body').animate(
+    $('#root').animate(
       {
-        scrollTop: $('#about').offset().top - 104,
+        scrollTop: $('#root').scrollTop() + $('#about').offset().top - 104,
       },
       500,
       function () {

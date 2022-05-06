@@ -1,18 +1,19 @@
 //- podcast
-.podcast.container#podcast
-  .container_title Podcast
-  //- 下方圖片資訊
-  .podcast_container
-    .podcast_left
-      img.lazy.podcast_cover(src=require("../../images/previews/podcast_cover.svg") data-src=require("../../images/originals/podcast_cover.png") alt="product" width="411" height="411")
-    .podcast_right
-      .podcast_info
-        img.lazy.podcast_logo_title(src=require("../../images/previews/podcast_logo_title.svg") data-src=require("../../images/originals/podcast_logo_title.png") alt="product" width="828" height="111")
-        .podcast_text 《日本好開心》陪你一起聊動漫、聊旅遊、聊學習日文、聊日本。不定時切換中日文雙聲道，和大家一起有的沒的亂亂聊。在一成不變的日常當中，一起尋找生活樂趣！
-      .podcast_bottom
-        a.podcast_link_button(href="https://open.firstory.me/user/japan-happy/platforms" target="_blank" rel="noreferrer noopener")
-          .podcast_link_button_content
-            img.podcast_link_tri(src=require("../../images/originals/podcast_triangle.svg") alt="product" width="36" height="40")
-            .podcast_link_text 點我收聽
-        a.podcast_link_mic(href="https://open.firstory.me/user/japan-happy/platforms" target="_blank" rel="noreferrer noopener")
-          img.podcast_mic(src=require("../../images/originals/podcast_mic.svg") alt="product" width="164" height="321")
+.podcast_wrapper
+  .podcast.container#podcast
+    .container_title Podcast
+    //- 下方圖片資訊
+    .podcast_container
+      .podcast_left
+        img.lazy.podcast_cover(src=require("../../images/previews/podcast_cover.svg") data-src=require("../../images/originals/podcast_cover.png") alt="product" width="411" height="411")
+      .podcast_right
+        .podcast_info
+          img.lazy.podcast_logo_title(src=require("../../images/previews/podcast_logo_title.svg") data-src=require("../../images/originals/podcast_logo_title.png") alt="product" width="828" height="111")
+          .podcast_text 《日本好開心》陪你一起聊動漫、聊旅遊、聊學習日文、聊日本。不定時切換中日文雙聲道，和大家一起有的沒的亂亂聊。在一成不變的日常當中，一起尋找生活樂趣！
+        .podcast_bottom
+          a.podcast_link_button(href="https://open.firstory.me/user/japan-happy/platforms" target="_blank" rel="noreferrer noopener")
+            .podcast_link_button_content
+              img.podcast_link_tri(src=require("../../images/originals/podcast_triangle.svg") alt="product" width="36" height="40")
+              .podcast_link_text 點我收聽
+          a.podcast_link_mic(href="https://open.firstory.me/user/japan-happy/platforms" target="_blank" rel="noreferrer noopener")
+            img.podcast_mic(src=require("../../images/originals/podcast_mic.svg") alt="product" width="164" height="321")

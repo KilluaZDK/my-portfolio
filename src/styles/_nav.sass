@@ -7,6 +7,7 @@ nav.nav
   z-index: 12
   display: flex
   align-items: center
+  justify-content: center
   background: base.$color_background
 
   .nav_content
@@ -15,8 +16,8 @@ nav.nav
     justify-content: space-between
     align-items: center
     height: 40px
-    width: 100%
-    margin: 0px 32px
+    width: base.$container_width
+    margin: 0px 40px
     .nav_left
       img
         z-index: 2
@@ -55,11 +56,26 @@ nav.nav
       font-size: 100px
 
 // RWD
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1280px)
+  nav.nav
+    .nav_content
+      width: base.$container_width_xl
+@media screen and (max-width: 1024px)
+  nav.nav
+    .nav_content
+      width: base.$container_width_lg
+      .menu-items
+        div.item
+          a.nav_text
+            font-size: 24px
+            letter-spacing: 6px
+        div.item ~ div.item
+          margin: 0 0 0 24px
+
+@media screen and (max-width: 768px)
   nav.nav
     height: base.$height_nav
     .nav_content
-      margin: 0px 32px
       input#nav_switch
         position: absolute
         display: block
@@ -96,7 +112,7 @@ nav.nav
           transform-origin: 0% 100%
           transition: transform 0.4s ease-in-out
       .menu-items
-        height: 100vh
+        height: 100%
         width: 100vw
         transform: translate(150%)
         display: flex
@@ -106,13 +122,16 @@ nav.nav
         background: base.$color_hamburger_bg
         align-items: center
         justify-content: center
-        position: absolute
+        position: fixed
         top: 0
         left: 0
         bottom: 0
         right: 0
-        margin-top: -16px
-        margin-left: -32px
+
+        div.item
+          a.nav_text
+            font-size: 28px
+            letter-spacing: 8px
 
         div.item ~ div.item
           margin: 0 0 0 0px
@@ -135,3 +154,8 @@ nav.nav
 
       input#nav_switch:checked ~ .nav_hamburger-lines .line3
         transform: rotate(-45deg)
+
+@media screen and (max-width: 576px)
+  nav.nav
+    .nav_content
+      margin: 0px 20px
