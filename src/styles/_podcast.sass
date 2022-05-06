@@ -1,10 +1,11 @@
 @use 'fundation/base'
 
-.podcast.container#podcast
+.podcast_wrapper
   width: 100%
-  margin-top: 60px
+  min-height: 100%
   background-color: rgba(#A3C6FE, 0.3)
-  padding: 80px 60px
+
+.podcast.container#podcast
   //- 下方圖片資訊
   .podcast_container
     display: flex
@@ -63,7 +64,7 @@
               transform: rotate(10deg)
 
 // RWD
-@media screen and (max-width: 1100px)
+@media screen and (max-width: 1024px)
   .podcast.container#podcast
     //- 下方圖片資訊
     .podcast_container
@@ -89,7 +90,6 @@
 
 @media screen and (max-width: 1000px)
   .podcast.container#podcast
-    margin-top: 60px
     .podcast_container
       flex-direction: column
       align-items: center
@@ -136,9 +136,8 @@
               width: 40px
               height: auto
 
-@media screen and (max-width: 840px)
+@media screen and (max-width: 768px)
   .podcast.container#podcast
-    padding: 40px
     .podcast_container
       // 下方資訊內容
       .podcast_right
@@ -146,9 +145,8 @@
           .podcast_text
             width: 100%
 
-@media screen and (max-width: 570px)
+@media screen and (max-width: 576px)
   .podcast.container#podcast
-    padding: 20px
     .podcast_container
       // 上方封面圖片
       .podcast_left

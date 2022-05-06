@@ -22,7 +22,8 @@
       transition: 0.3s
       text-decoration: none
       img
-        width: 120px
+        width: 35%
+        max-width: 120px
         height: auto
       pre.contact_block_text
         font-size: 20px
@@ -35,97 +36,53 @@
   .contact_logo_wrapper
     display: flex
     img.contact_logo
-      width: 50%
+      width: 80%
       height: auto
       margin: 160px auto
 
 // RWD
-@media screen and (max-width: 1170px)
+@media screen and (max-width: 1024px)
   .contact.container
     //- 下方三區塊
     .contact_container
       .contact_block
         img
-          width: 80px
-          height: auto
-        pre.contact_block_text
-          font-size: 16px
-
-@media screen and (max-width: 950px)
-  .contact.container
-    //- 下方三區塊
-    .contact_container
-      .contact_block
-        img
-          width: 60px
+          width: 20%
+          max-width: 60px
           height: auto
         pre.contact_block_text
           font-size: 14px
 
-@media screen and (max-width: 850px)
-  .contact.container
-    //- 下方三區塊
-    .contact_container
-      .contact_block
-        img
-          width: 48px
-          height: auto
-        pre.contact_block_text
-          font-size: 12px
-
-@media screen and (max-width: 780px)
+@media screen and (max-width: 768px)
   .contact.container
     //- 下方三區塊
     .contact_container
       flex-wrap: wrap
       .contact_block
         flex-direction: row
-        align-items: center
-        width: 600px
         img
-          width: 48px
+          max-width: 48px
           height: auto
-          margin: 0 0 0 16px
+          margin: 0 8px
         pre.contact_block_text
-          font-size: 20px
+          width: 80%
           margin: 0
-
-@media screen and (max-width: 570px)
-  .contact.container
-    //- 下方三區塊
-    .contact_container
-      .contact_block
-        margin: 28px 0 0 0
-        border-radius: 48px
-
-@media screen and (max-width: 480px)
-  .contact.container
-    //- 下方三區塊
-    .contact_container
-      .contact_block ~ .contact_block
-        margin: 20px 0 0 0
-      .contact_block
-        img
-          width: 32px
-          height: auto
-          margin: 0 0 0 12px
-        pre.contact_block_text
-          font-size: 16px
-
-@media screen and (max-width: 414px)
-  .contact.container
-    //- 下方三區塊
-    .contact_container
-      .contact_block
-        padding: 8px 4px
-        img
-          width: 28px
-          height: auto
-          margin: 0 0 0 12px
-        pre.contact_block_text
-          font-size: 12px
     //- 底部 logo
     .contact_logo_wrapper
       img.contact_logo
         width: 100%
-        margin: 80px auto
+
+@media screen and (max-width: 576px)
+  .contact.container
+    //- 下方三區塊
+    .contact_container
+      flex-direction: column
+      .contact_block ~ .contact_block
+        margin: 20px 0 0 0
+      .contact_block
+        padding: 12px 8px
+        border-radius: 48px
+        img
+          margin: 8px 12px
+        pre.contact_block_text
+          font-size: 16px

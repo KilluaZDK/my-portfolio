@@ -1,6 +1,6 @@
 export default function backToTop() {
   $('.nav_left img').on('click', function () {
-    $('html, body').animate(
+    $('#root').animate(
       {
         scrollTop: 0,
       },

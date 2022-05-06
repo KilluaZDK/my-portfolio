@@ -7,9 +7,9 @@ export default function smoothScroll() {
 
       $('input#nav_switch').prop('checked', false)
 
-      $('html, body').animate(
+      $('#root').animate(
         {
-          scrollTop: $(hash).offset().top - 104,
+          scrollTop: $('#root').scrollTop() + $(hash).offset().top - 72,
         },
         'slow',
         function () {
