@@ -1,3 +1,5 @@
+import { navHeight } from './spec'
+
 export default function showMoreWorks() {
   const handleWorks = ($button) => {
     const $wrapper = $button.prev('.label_wrapper')
@@ -28,7 +30,8 @@ export default function showMoreWorks() {
       )
       $('#root').animate(
         {
-          scrollTop: $('#root').scrollTop() + $button.prev().prev('.works_block_title_wrapper').offset().top - 80,
+          scrollTop:
+            $('#root').scrollTop() + $button.prev().prev('.works_block_title_wrapper').offset().top - navHeight,
         },
         'slow'
       )

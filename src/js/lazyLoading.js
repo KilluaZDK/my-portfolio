@@ -27,7 +27,8 @@ export default function lazyLoading() {
       observer.observe(img)
     })
   } else {
-    // Fallback for browsers that don't support IntersectionObserver
+    // TODO: Fallback for browsers that don't support IntersectionObserver
+    // TODO: no js support
     lazyImages.forEach((img) => {
       setImageSrc(img)
     })

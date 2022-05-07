@@ -17,12 +17,13 @@ nav.nav
     align-items: center
     height: 40px
     width: base.$container_width
-    margin: 0px 40px
+    padding: 0 base.$container_padding-x
     .nav_left
+      height: 100%
       img
         z-index: 2
-        width: 100%
-        height: 40px
+        width: auto
+        height: 100%
         cursor: pointer
         transition: 0.3s
         &:hover
@@ -60,10 +61,12 @@ nav.nav
   nav.nav
     .nav_content
       width: base.$container_width_xl
+
 @media screen and (max-width: 1024px)
   nav.nav
     .nav_content
       width: base.$container_width_lg
+      padding: 0 base.$container_padding-x_lg
       .menu-items
         div.item
           a.nav_text
@@ -72,6 +75,7 @@ nav.nav
         div.item ~ div.item
           margin: 0 0 0 24px
 
+// hamburger menu
 @media screen and (max-width: 768px)
   nav.nav
     height: base.$height_nav
@@ -81,8 +85,7 @@ nav.nav
         display: block
         height: 32px
         width: 32px
-        top: 5px
-        right: 5px
+        right: base.$container_padding-x_lg
         z-index: 5
         opacity: 0
         cursor: pointer
@@ -91,8 +94,7 @@ nav.nav
         height: 26px
         width: 32px
         position: absolute
-        top: 5px
-        right: 7px
+        right: base.$container_padding-x_lg
         z-index: 2
         display: flex
         flex-direction: column
@@ -158,4 +160,8 @@ nav.nav
 @media screen and (max-width: 576px)
   nav.nav
     .nav_content
-      margin: 0px 20px
+      padding: 0 base.$container_padding-x_sm
+      input#nav_switch
+        right: base.$container_padding-x_sm
+      .nav_hamburger-lines
+        right: base.$container_padding-x_sm
