@@ -1,3 +1,5 @@
+import { navHeight } from './spec'
+
 export default function smoothScroll() {
   const scrollHandler = (e) => {
     const hash = e.currentTarget.hash
@@ -9,7 +11,7 @@ export default function smoothScroll() {
 
       $('#root').animate(
         {
-          scrollTop: $('#root').scrollTop() + $(hash).offset().top - 72,
+          scrollTop: $('#root').scrollTop() + $(hash).offset().top - navHeight,
         },
         'slow',
         function () {

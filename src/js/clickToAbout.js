@@ -1,8 +1,10 @@
+import { navHeight } from './spec'
+
 export default function clickToAbout() {
   $('.header_bottom_button').on('click', function () {
     $('#root').animate(
       {
-        scrollTop: $('#root').scrollTop() + $('#about').offset().top - 104,
+        scrollTop: $('#root').scrollTop() + $('#about').offset().top - navHeight,
       },
       500,
       function () {

@@ -88,14 +88,20 @@ body
 $container_width: 70%
 $container_width_xl: 85%
 $container_width_lg: 100%
-$container_padding-x: 80px
-$container_padding-x_lg: 48px
+
+$container_padding-y: 80px
+$container_padding-y_lg: 48px
+$container_padding-y_sm: 48px
+
+$container_padding-x: 0
+$container_padding-x_lg: 40px
+$container_padding-x_sm: 20px
 
 .container
   width: $container_width
   min-height: calc(100% - $height_nav)
   margin: 0 auto
-  padding: $container_padding-x 0
+  padding: $container_padding-y $container_padding-x
   .container_title
     @include large_top_title
 
@@ -105,12 +111,12 @@ $container_padding-x_lg: 48px
 
 @media screen and (max-width: 1024px)
   .container
-    padding: $container_padding-x_lg 40px
+    padding: $container_padding-y_lg $container_padding-x_lg
     width: $container_width_lg
     margin: 0
 
 @media screen and (max-width: 576px)
   .container
-    padding: 48px 20px
+    padding: $container_padding-y_sm $container_padding-x_sm
     .container_title
       @include small_top_title
