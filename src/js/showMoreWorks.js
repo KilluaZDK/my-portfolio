@@ -47,4 +47,9 @@ export default function showMoreWorks() {
     const $button = $(this).prev('.works_more_button')
     handleWorks($button)
   })
+
+  $('.works_block_content_image_wrapper').on('click', function () {
+    const $button = $(this).parent().parent().next()
+    handleWorks($button)
+  })
 }
